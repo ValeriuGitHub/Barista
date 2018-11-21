@@ -1,0 +1,29 @@
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    &_relative {
+        position: relative;
+    }
+    &_flex {
+        display: flex;
+    }
+    @include laptops {
+        min-width: 800px;
+        width: auto;
+        margin: 0 auto;
+        padding: 0px 30px;
+    }
+
+    @include tablets {
+        min-width: 440px;
+        margin: 0 auto;
+        padding: 0px 20px;
+    }
+
+    @include phones {
+        min-width: 300px;
+        margin: 0 auto;
+        padding: 0px 10px;
+    }
+}

@@ -1,0 +1,71 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    color: $black;
+    font-family: 'PlumbCondensed';
+    font-weight: normal;
+}
+
+body {
+    line-height: 1.42;
+}
+
+a {
+    transition: 300ms;
+	text-decoration: none;
+    display: block;
+}
+
+ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+li {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    background-color: transparent;
+    border-style: none;
+    cursor: pointer;
+}
+
+// // remove close
+// input[type=text]::-clear {  display: none; width : 0; height: 0; }
+// input[type=text]::-reveal {  display: none; width : 0; height: 0; }
+// input[type="search"]::-search-decoration,
+// input[type="search"]::-search-cancel-button,
+// input[type="search"]::-search-results-button,
+// input[type="search"]::-search-results-decoration { display: none; }
+// // forms
+// input {outline:none;}
+// a:active, a:focus { outline: none; }
+// li:focus {
+//     outline-style: none;
+//     outline-width: 0px !important;
+//     outline-color: none !important;
+// }
+// input::placeholder { color: $black; }
+// input::placeholder { color: $black; }
+// textarea {outline:none;}
+// textarea::placeholder { color: $black; }
+// textarea::-input-placeholder { color: $black; }
