@@ -3,6 +3,7 @@ $transition: 300ms;
 // gray
 
 $black: #000;
+$orange: #eab96a;
 
 // Basic stylesheets
 
@@ -12,7 +13,7 @@ $black: #000;
 
 // Page parts
 
-// @import "./blocks/header.scss";
+@import "./blocks/header.scss";
 // @import "./blocks/footer.scss";
 
 // Site pages styles

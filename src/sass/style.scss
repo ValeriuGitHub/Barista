@@ -1,3 +1,62 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Regular.eot');
+    src: url('fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Roboto-Regular.woff2') format('woff2'),
+        url('fonts/Roboto-Regular.woff') format('woff'),
+        url('fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Black.eot');
+    src: url('fonts/Roboto-Black.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Roboto-Black.woff2') format('woff2'),
+        url('fonts/Roboto-Black.woff') format('woff'),
+        url('fonts/Roboto-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Georgia';
+    src: url('fonts/Georgia-Regular.eot');
+    src: url('fonts/Georgia-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Georgia-Regular.woff2') format('woff2'),
+        url('fonts/Georgia-Regular.woff') format('woff'),
+        url('fonts/Georgia-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Georgia';
+    src: url('fonts/Georgia-Black.eot');
+    src: url('fonts/Georgia-Black.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Georgia-Black.woff2') format('woff2'),
+        url('fonts/Georgia-Black.woff') format('woff'),
+        url('fonts/Georgia-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.main-title {
+    font-size: 100px;
+    font-family: "Roboto";
+    color: $black;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.small-title {
+    font-size: 32px;
+    font-family: "Georgia";
+    color: $black;
+    text-align: left;
+}
+
 .container {
     width: 1200px;
     margin: 0 auto;

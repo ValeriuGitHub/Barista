@@ -1,0 +1,100 @@
+.header {
+	& {
+	    background: url(./img/header-bg.jpg) center no-repeat;
+	    background-size: cover;
+	    height: 100vh;
+	    width: 100%;
+    	padding: 27px 45px 0 75px;
+	}
+	&-top {
+		display: flex;
+	    justify-content: space-between;
+	    &__line {
+		    position: absolute;
+		    height: 1px;
+		    background-color: #837878;
+		    top: 17.2%;
+	    }
+	    &__left-line {
+    		width: 2%;
+    		left: 0;
+	    }
+	    &__right-line {
+		    width: 82.4%;;
+		    left: 17.6%;
+	    }
+	}
+	&-logo {
+		&-wrapper {
+		}
+		&__img {
+			display: block;
+		    width: 225.5px;
+		    margin-right: 115px;
+		  //   &:before, &:after {
+		  //   	content: "";
+		  //   	position: absolute;
+		  //   	display: block;
+		  //   	height: 1px;
+		  //   	background-color: #837878;
+		  //   }
+		  //   &:before {
+				// left: 0;
+				// width: 10%
+		  //   }
+		  //   &:after {
+		  //   	left: 30%;
+		  //   }
+		}
+	}
+	&-navigation {
+	    display: flex;
+	    justify-content: flex-end;
+	    width: 55.5%;
+		&__list {
+			display: flex;
+		}
+		&__item {
+		    font-size: 12px;
+			margin-left: 43px;
+			transition: 0.7s;
+			position: relative;
+		    &:last-child {
+		    	margin-right: 6px;
+		    }
+		   	&:after {
+  				content: "";
+  				width: 5px;
+  				height: 5px;
+  				border-radius: 50%;
+  				background-color: #fff;
+  				display: block;
+			    position: absolute;
+			    top: 16.5%;
+			    left: -26%;
+  			}
+			&:first-child {
+				margin-right: 12px;
+				&:after {
+					display: none;
+				}
+			}
+		}
+		&__link {
+			color: #fff;
+			text-transform: uppercase;
+			padding: 20px 14px 38px 14px;
+  			font-family: "Roboto";
+  			&:hover {
+  				border-bottom: 3px solid $orange;
+  				color: $orange;
+  			}
+		}
+	}
+	&-phone {
+		color: #fff;
+		font-size: 25px;
+		font-family: "Roboto";
+		line-height: 1.852;
+	}
+}
