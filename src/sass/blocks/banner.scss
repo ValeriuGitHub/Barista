@@ -1,0 +1,96 @@
+.banner {
+	padding: 38px 0px 0px 0px;
+	&-stars {
+		&__img {
+			margin: 0 auto;
+			display: block;
+		    width: 90px;
+		    margin-bottom: 32px;
+		}
+	}
+	&__main {
+		&-title {
+		font-size: 55px;
+    	color: #fff;
+    	letter-spacing: 6.35px;
+    	margin-bottom: 36px;
+			&_orange {
+				color: $orange;
+			}
+		}
+	}
+	&__over {
+		&-title {
+			font-size: 17.5px;
+			font-family: "Georgia";
+			text-align: center;
+			font-weight: 300;
+			color: #fff;
+			margin-bottom: 37px;
+			&:before, &:after {
+				content: "";
+				display: inline-block;
+				width: 100px;
+    			height: 13px;
+			}
+			&:before {
+				background-image: url("./img/before-line.svg");
+				margin-right: 85px;
+			    margin-top: 4px;
+			}
+			&:after {
+				height: 16px;
+				margin-left: 85px;
+		    	transform: rotate(-180deg);
+				background-image: url("./img/before-line.svg");
+			}
+		}
+	}
+	&__under {
+		&-title {
+			font-size: 21px;
+			color: #fff;
+			font-weight: 300;
+			margin-bottom: 29.5px;
+		}
+		&-img {
+			display: block;
+			margin: 0 auto;
+			width: 140px;
+			&-wrapper {
+				margin: 0 auto;
+				margin-bottom: 71px;
+			}
+		}
+	}
+	&-circle {
+		border-radius: 50%;
+		border: 1px solid #fff;
+		width: 60px;
+		height: 60px;
+		position: relative;
+		z-index: 0;
+		margin: 0 auto;
+		&:hover {
+			border-color: #b3b0b0;
+		}
+		&:hover .banner-circle__arrow {
+			border-color: #fff;
+			border-top-color: transparent;
+		    border-left-color: transparent;
+		}
+		&__arrow {
+		    width: 12px;
+		    height: 12px;
+		    border: 3px solid #eab96a;
+		    border-top-color: transparent;
+		    border-left-color: transparent;
+		    transform: rotate(45deg);
+		    position: absolute;
+		    top: 24px;
+		    left: 24px;
+		    margin: auto;
+		    z-index: 1;
+		}
+	}
+}

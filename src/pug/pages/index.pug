@@ -2,4 +2,6 @@ extends ../templates/common.pug
 block variables
     - var title = "Barista training in Amsterdam";
 block content
-    include ../blocks/header.pug
+    header.header#header
+        include ../blocks/header.pug
+        include ../blocks/banner.pug
