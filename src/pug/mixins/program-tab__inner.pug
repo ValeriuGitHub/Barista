@@ -1,4 +1,4 @@
-mixin program-tab__inner(url, title, time, price)
+mixin program-tab__inner(url, title, time, price, priceValuta)
 	.program-tab__inner
 		.tab-inner__img-wrapper
 			img(src=url).tab-inner__img
@@ -11,66 +11,69 @@ mixin program-tab__inner(url, title, time, price)
 			.course__time
 				img(src="./img/timer.svg").course__time-img
 				.course__time-text #{time}
-			.course__price #{price}
+			.course__price-wrapper
+				.course__price #{price}
+				span.course__price_smaller #{priceValuta}
 			button.course__button
 				| registration
 	.program-tab__inner-description
 		ul.inner-description__list
 			li.inner-description__item
 				h3.small-title.inner-description__title
-					| Provenance coffee and basic concepts:
-				ul.inner-description__list
-					li.inner-description__item.inner-description__item_without-dash
+					span.inner-description__title_new-line Provenance
+					| coffee and basic concepts:
+				ul.inner-description__list-dash
+					li.inner-description__item-dash.inner-description__item-dash_without-dash
 						| Legend of the origin of coffee.
-					li.inner-description__item
+					li.inner-description__item-dash
 						| Chronicle of the spread of the coffee tree
-					li.inner-description__item
+					li.inner-description__item-dash
 						| What is coffee?
-					li.inner-description__item
+					li.inner-description__item-dash
 						| The structure of the coffee berry
-					li.inner-description__item
+					li.inner-description__item-dash
 						| Arabica and Robusta
-					li.inner-description__item
+					li.inner-description__item-dash
 						| Coffee Belt land
-					li.inner-description__item
+					li.inner-description__item-dash
 						| Fruiting coffee tree
-					li.inner-description__item
+					li.inner-description__item-dash
 						| Seven steps of the coffee plantation to the consumer
-					li.inner-description__item
+					li.inner-description__item-dash
 						| Breeding and hybridization of coffee tree
 			li.inner-description__item
 				h3.small-title.inner-description__title
 					| coffee production technology:
-				ul.inner-description__list
-					li.inner-description__item
+				ul.inner-description__list-dash
+					li.inner-description__item-dash
 						| Methods for collecting coffee berries
-					li.inner-description__item
+					li.inner-description__item-dash
 						| Processing collected berries
-					li.inner-description__item
+					li.inner-description__item-dash
 						| Calibration and sorting
-					li.inner-description__item
+					li.inner-description__item-dash
 						| Some methods of classification and labeling of coffee beans.
-					li.inner-description__item
+					li.inner-description__item-dash
 						| Formation of grade names.
-					li.inner-description__item
+					li.inner-description__item-dash
 						| Storage of green (not fried) Coffee
 			li.inner-description__item
-				h3.small-title.inner-description__title
+				h3.small-title.inner-description__title.inner-description__title_padding-right
 					| roasting Technology bean. and Stage types of roasting.
-				ul.inner-description__list
-					li.inner-description__item.inner-description__item_without-dash
+				ul.inner-description__list-dash
+					li.inner-description__item-dash.inner-description__item-dash_without-dash
 						| The technology of roasting coffee beans
-					li.inner-description__item
+					li.inner-description__item-dash
 						| Changes in the beans.
-					li.inner-description__item
+					li.inner-description__item-dash
 						| Stages and types of roasting.
-					li.inner-description__item
+					li.inner-description__item-dash
 						| Roasted coffee. Monosorta and hood.
-					li.inner-description__item
+					li.inner-description__item-dash
 						| Decaffeination of coffee
-					li.inner-description__item
+					li.inner-description__item-dash
 						| Coffee Belt land
-					li.inner-description__item
+					li.inner-description__item-dash
 						| Flavoring
-					li.inner-description__item
+					li.inner-description__item-dash
 						| Storage roasted coffee

@@ -1,7 +1,6 @@
 .program {
     background: url(./img/programs-bg.jpg) center no-repeat;
     background-size: cover;
-    // height: 100vh;
     width: 100%;
     &__main {
     	&-title {
@@ -25,12 +24,142 @@
     	&-title {
 			font-weight: 300;
 			color: #485260;
+			margin-bottom: 40px;
 		}
     }
     &-tab {
     	&__list {
     		display: flex;
     		justify-content: center;
+    	}
+    	&__item {
+			font-size: 21px;
+			font-family: "Roboto";
+			text-transform: uppercase;
+			margin-bottom: 70px;
+		}
+		&__link {
+		    padding: 20px 70px;
+    		border-bottom: 2px solid #c6c6c6;
+    		color: $black;
+		}
+		&__inner {
+			display: flex;
+			padding-bottom: 70px;
+		   	&-description {
+				padding-bottom: 30px;
+			}
+		}
+    }
+    .tab {
+    	&-inner {
+    		&__img {
+    			display: block;
+    			width: 720px;
+    			margin-right: 40px;
+    		}
+    	}
+    }
+    .course {
+    	&__title {
+    		font-size: 30px;
+    		font-weight: bold;
+    		color: #2b2b2b;
+    		font-family: "Georgia";
+    		margin-bottom: 40px;
+    	}
+    	&__certificate {
+    		display: flex;
+    		align-items: center;
+    		margin-bottom: 20px;
+    		&-img {
+    			width: 30px;
+    		}
+    		&-text {
+			    margin-left: 15px;
+			    font-weight: 300;
+			    font-family: "Georgia";
+    		}
+    	}
+    	&__time {
+    		display: flex;
+    		align-items: center;
+    		margin-bottom: 40px;
+    		&-text {
+    			margin-left: 15px;
+    			font-weight: 300;
+    			font-family: "Georgia";
+    		}
+    		&-img {
+    			width: 30px;
+    		}
+    	}
+    	&__price {
+			font-size: 58px;
+			font-family: "Georgia";
+			font-weight: bold;
+    		&-wrapper {
+    			display: flex;
+    			align-items: center;
+    			margin-bottom: 10px;
+    		}
+    		&_smaller {
+				font-size: 31.3px;
+				margin-top: 20px;
+    		}
+    	}
+    	&__button {
+    		padding: 25px 70px;
+    		background-color: $black;
+    		text-transform: uppercase;
+    		font-family: "Roboto Black";
+    		font-size: 14px;
+    		color: #fff;
+    	}
+    }
+    .inner {
+    	&-description {
+    		&__list {
+    			display: flex;
+    			flex-wrap: nowrap;
+    		}
+    		&__item {
+    			display: flex;
+    			flex-direction: column;
+    			flex-wrap: nowrap;
+    			margin-right: 40px;
+    			&-dash {
+					display: block;
+					color: #485260;
+					font-family: "Georgia";
+					font-size: 16px;
+					margin-bottom: 20px;
+					width: 383px;
+    				&:before {
+    					content: "-";
+    					margin-right: 10px;
+    				}
+    			}
+    		}
+    		&__title {
+    			font-size: 17.5px;
+    			font-family: "Roboto Black";
+    			width: 300px;
+    			text-align: left;
+    			text-transform: uppercase;
+    			padding: 40px 0px;
+    			border-top: 1px solid #837878;
+    			display: inline-grid;
+			    vertical-align: bottom;
+			    align-content: end;
+			    height: 140px;
+    			&_new-line {
+    				display: block;
+    			}
+    			&_padding-right {
+    			    padding-right: 98px;
+    			}
+    		}
     	}
     }
 }

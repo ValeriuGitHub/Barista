@@ -5,12 +5,12 @@ main.program#program
 		h2.small-title.program__under-title
 			| We share their experience and professional barista championship
 		ul.program-tab__list
-			li.program-tab__item 
-				|Basic
-				+program-tab__inner('./img/machine.jpg', 'Course Beginners', '240 minutes', '1500 usd' )
-			li.program-tab__item 
-				|Premium
-				//- +program-tab__inner('./img/machine.jpg', 'Course Beginners', '240 minutes', '1500 usd' )
 			li.program-tab__item
-				| Platinum
-				//- +program-tab__inner('./img/machine.jpg', 'Course Beginners', '240 minutes', '1500 usd' )
+				a(href="").program-tab__link Basic
+			li.program-tab__item
+				a(href="").program-tab__link Premium
+			li.program-tab__item
+				a(href="").program-tab__link Platinum
+		+program-tab__inner('./img/machine.jpg', 'Beginners Course', '240 minutes', '1 500', 'usd')
+		//- +program-tab__inner('./img/machine.jpg', 'Course Beginners', '240 minutes', '1500 usd' )
+		//- +program-tab__inner('./img/machine.jpg', 'Course Beginners', '240 minutes', '1500 usd' )
