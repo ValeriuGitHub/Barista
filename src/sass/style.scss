@@ -22,22 +22,11 @@
 
 @font-face {
     font-family: 'Georgia';
-    src: url('fonts/Georgia-Regular.eot');
-    src: url('fonts/Georgia-Regular.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Georgia-Regular.woff2') format('woff2'),
-        url('fonts/Georgia-Regular.woff') format('woff'),
-        url('fonts/Georgia-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Georgia';
-    src: url('fonts/Georgia-Black.eot');
-    src: url('fonts/Georgia-Black.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Georgia-Black.woff2') format('woff2'),
-        url('fonts/Georgia-Black.woff') format('woff'),
-        url('fonts/Georgia-Black.ttf') format('truetype');
+    src: url('fonts/Georgia.eot');
+    src: url('fonts/Georgia.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Georgia.woff2') format('woff2'),
+        url('fonts/Georgia.woff') format('woff'),
+        url('fonts/Georgia.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
