@@ -242,21 +242,30 @@
     			border: 1px solid $black;
     			padding: 8px 15px;
     			&-text {
-			    font-size: 16px;
-			    font-family: Georgia;
-			    color: #485260;
-			    line-height: 2.5;
-			    border-left: 0px;
-			    padding-top: 0px;
-			    padding-bottom: 0px;
-			    height: 39px;
-			    letter-spacing: -0.15px;
-			    width: 643px;
+    			    font-size: 16px;
+    			    font-family: Georgia;
+    			    color: #485260;
+    			    line-height: 2.5;
+    			    border-left: 0px;
+                    border-bottom: 0px;
+    			    padding-top: 0px;
+    			    padding-bottom: 0px;
+    			    height: 39px;
+    			    letter-spacing: -0.15px;
+    			    width: 643px;
+                    font-weight: 300;
+                    &_last {
+                        border-bottom: 1px solid #000;
+                    }
     			}
     			&-status {
 				    font-size: 18px;
 				    height: 39px;
 				    border: 1px solid #000;
+                    border-bottom: 0px;
+                    &_last{
+                        border-bottom: 1px solid #000;
+                    }
     			}
     		}
     	}
