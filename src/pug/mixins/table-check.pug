@@ -1,0 +1,5 @@
+mixin table-row(status, text)
+	tr.inner-table__vertical
+		td.inner-table__cell.inner-table__cell-status
+			i(class=`fa fa-${status}`)
+		td.inner-table__cell.inner-table__cell-text #{text}

@@ -1,7 +1,6 @@
 .program {
     background: url(./img/programs-bg.jpg) center no-repeat;
     background-size: cover;
-    // background-position-y: -70px; 
     margin-top: -50px;
     padding-top: 120px;
     width: 100%;
@@ -37,6 +36,16 @@
 		}
     }
     &-tab {
+    	&__table {
+    		&-title {
+    			font-size: 17.5px;
+    			text-transform: uppercase;
+    			font-family: "Roboto";
+    			font-weight: 700;
+    			letter-spacing: 1px;
+    			margin-bottom: 20px;
+    		}
+    	}
     	&__list {
 			display: flex;
 		    justify-content: center;
@@ -67,7 +76,13 @@
 			display: flex;
 			margin-bottom: 75px;
 		   	&-description {
-				padding-bottom: 30px;
+				padding-bottom: 48px;
+			}
+			&-table {
+				&-wrapper {
+					padding-left: 8px;
+					padding-bottom: 250px;
+				}
 			}
 		}
     }
@@ -216,6 +231,32 @@
     			}
     			&_padding-right {
     			    padding-right: 98px;
+    			}
+    		}
+    	}
+    	&-table {
+    		&__vertical {
+				display: flex;
+    		}
+    		&__cell {
+    			border: 1px solid $black;
+    			padding: 8px 15px;
+    			&-text {
+			    font-size: 16px;
+			    font-family: Georgia;
+			    color: #485260;
+			    line-height: 2.5;
+			    border-left: 0px;
+			    padding-top: 0px;
+			    padding-bottom: 0px;
+			    height: 39px;
+			    letter-spacing: -0.15px;
+			    width: 643px;
+    			}
+    			&-status {
+				    font-size: 18px;
+				    height: 39px;
+				    border: 1px solid #000;
     			}
     		}
     	}
