@@ -1,8 +1,9 @@
-mixin program-tab__inner(url, title, time, price, priceValuta)
+mixin program-tab__inner(url, backTitle, title, time, price, priceValuta)
 	.program-tab__inner
 		.tab-inner__img-wrapper
 			img(src=url).tab-inner__img
 		.tab-inner__course
+			h2.course__back-title #{backTitle}
 			h2.course__title #{title}
 			.course__certificate
 				img(src="./img/certificate.svg").course__certificate-img
@@ -52,7 +53,9 @@ mixin program-tab__inner(url, title, time, price, priceValuta)
 					li.inner-description__item-dash
 						| Calibration and sorting
 					li.inner-description__item-dash
-						| Some methods of classification and labeling of coffee beans.
+						| Some methods of classification and labeling of
+					li.inner-description__item-dash.inner-description__item_without-dash
+						| coffee beans.
 					li.inner-description__item-dash
 						| Formation of grade names.
 					li.inner-description__item-dash
@@ -61,7 +64,7 @@ mixin program-tab__inner(url, title, time, price, priceValuta)
 				h3.small-title.inner-description__title.inner-description__title_padding-right
 					| roasting Technology bean. and Stage types of roasting.
 				ul.inner-description__list-dash
-					li.inner-description__item-dash.inner-description__item-dash_without-dash
+					li.inner-description__item-dash
 						| The technology of roasting coffee beans
 					li.inner-description__item-dash
 						| Changes in the beans.
@@ -71,8 +74,6 @@ mixin program-tab__inner(url, title, time, price, priceValuta)
 						| Roasted coffee. Monosorta and hood.
 					li.inner-description__item-dash
 						| Decaffeination of coffee
-					li.inner-description__item-dash
-						| Coffee Belt land
 					li.inner-description__item-dash
 						| Flavoring
 					li.inner-description__item-dash
