@@ -61,20 +61,45 @@
 			text-transform: uppercase;
     		flex-basis: 100%;
     		letter-spacing: 2.5px;
+            opacity: 0.5;
+            &_active {
+                opacity: 1;
+                border-bottom: 2px solid $black;
+            }
 		}
 		&__link {
 		    padding: 50px 0px 34px;
     		color: $black;
-    		opacity: 0.5;
     		border-bottom: 2px solid transparent;
-    		&:hover {
-    			opacity: 1;
-    			border-bottom: 2px solid $black;
-    		}
+            z-index: 10;
+            position: relative;
 		}
 		&__inner {
 			display: flex;
 			margin-bottom: 75px;
+            &-status {
+                &_active {
+                    display: block;
+                }
+            }
+            // &-basic {
+            //     display: none;
+            //     &_active {
+            //         display: block;
+            //     }
+            // }
+            // &-premium {
+            //     display: none;
+            //     &_active {
+            //         display: block;
+            //     }
+            // }
+            // &-platinum {
+            //     display: none;
+            //     &_active {
+            //         display: block;
+            //     }
+            // }
 		   	&-description {
 				padding-bottom: 48px;
 			}
