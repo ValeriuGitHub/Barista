@@ -1,15 +1,13 @@
 .program {
     background: url(./img/programs-bg.jpg) center no-repeat;
     background-size: cover;
-    margin-top: -50px;
     padding-top: 120px;
+    padding-bottom: 80px;
     width: 100%;
     &__main {
     	&-title {
     		margin-bottom: 28px;
     		letter-spacing: 4.5px;
-    		// padding-top: 60px;
-    		// margin-top: -60px;
     		&:before, &:after {
 				content: "";
 				display: inline-block;
@@ -82,31 +80,12 @@
                     display: block;
                 }
             }
-            // &-basic {
-            //     display: none;
-            //     &_active {
-            //         display: block;
-            //     }
-            // }
-            // &-premium {
-            //     display: none;
-            //     &_active {
-            //         display: block;
-            //     }
-            // }
-            // &-platinum {
-            //     display: none;
-            //     &_active {
-            //         display: block;
-            //     }
-            // }
 		   	&-description {
 				padding-bottom: 48px;
 			}
 			&-table {
 				&-wrapper {
 					padding-left: 8px;
-					padding-bottom: 250px;
 				}
 			}
 		}
