@@ -1,0 +1,132 @@
+.testimonial {
+	padding-top: 90px;
+	padding-bottom: 107.5px;
+	&__title {
+	    letter-spacing: 4.5px;
+	    margin-bottom: 25px;
+	}
+	&__under-title {
+  		color: $dark-blue;
+  		letter-spacing: -0.15px;
+  		font-weight: 300;
+  		margin-bottom: 74px;
+	}
+	&__slider {
+		display: flex;
+		justify-content: center;
+		position: relative;
+	}
+	&__main {
+		&-slider {
+			display: flex;
+		    flex-direction: column;
+		    align-items: center;
+		}
+	}
+	&__avatar {
+		display: block;
+		width: 170px;
+		&-title {
+			font-size: 17.5px;
+			font-family: "Roboto";
+			text-transform: uppercase;
+		    letter-spacing: 1.5px;
+		    margin-bottom: 0px;
+		}
+		&-text {
+		    width: 872px;
+		    text-align: center;
+		    color: #485260;
+		    font-weight: 300;
+		    font-family: Georgia;
+		    letter-spacing: -0.1px;
+		    line-height: 2.2;
+		    margin-bottom: 56px;
+		}
+		&-wrapper {
+			position: relative;
+			margin-bottom: 35px;
+		}
+		&-icon {
+		    color: #fff;
+		    font-size: 21px;
+		}
+		&-circle {
+			border-radius: 50%;
+			background-color: #4267b2;
+			width: 38.5px;
+			height: 38.5px;
+			position: absolute;
+		    top: 13%;
+    		right: -5px;
+    	    display: flex;
+    		justify-content: center;
+   			align-items: center;
+   			&:hover {
+   				background-color: rgba(#4267b2, 0.9);
+   			}
+		}
+	}
+	&-circles {
+		&__list {
+			display: flex;
+			justify-content: center;
+		}
+		&__circle {
+			border-radius: 50%;
+			background-color: $black;
+			width: 15.5px;
+			height: 15.5px;
+			&_active {
+				background-color: $orange;
+			}
+		}
+		&__item {
+			margin-right: 19.5px;
+			&:last-child {
+				margin-right: 0px;
+			}
+		}
+	}
+}
+
+.slider {
+	&__ctrl {
+		width: 12px;
+		height: 12px;
+		transform: rotate(130deg);
+		border: 2px solid $dark-blue;
+		&_left {
+			border-top: 1px solid transparent;
+			border-left: 1px solid transparent;
+		}
+		&_right {
+			border-bottom: 1px solid transparent;
+			border-right: 1px solid transparent;
+		}
+		&-wrapper {
+		    width: 60px;
+		    height: 60px;
+		    position: absolute;
+		    display: flex;
+		    justify-content: center;
+		    align-items: center;
+		    top: 50%;
+		    margin-top: -26px;
+		    &_left {
+		    	left: -10px;
+		    	&:hover .slider__ctrl_left {
+		    		border-bottom-color: $black;
+		    		border-right-color: $black;
+		    	}
+		    }
+		    &_right {
+		    	right: -10px;
+		    	&:hover .slider__ctrl_right {
+		    		border-top-color: $black;
+		    		border-left-color: $black;
+		    	}
+		    }
+		}
+	}
+}

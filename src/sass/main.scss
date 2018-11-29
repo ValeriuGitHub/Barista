@@ -3,6 +3,7 @@ $transition: 300ms;
 // gray
 
 $black: #000;
+$dark-blue: #485260;
 $orange: #eab96a;
 
 // Basic stylesheets
@@ -17,6 +18,8 @@ $orange: #eab96a;
 @import "./blocks/banner.scss";
 @import "./blocks/programs.scss";
 @import "./blocks/gallery.scss";
+@import "./blocks/testimonial.scss";
+@import "./blocks/our partners.scss";
 // @import "./blocks/footer.scss";
 
 // Site pages styles

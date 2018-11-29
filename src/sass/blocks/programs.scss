@@ -28,7 +28,7 @@
     &__under {
     	&-title {
 			font-weight: 300;
-			color: #485260;
+			color: $dark-blue;
 			margin-bottom: 40px;
 			letter-spacing: -0.2px;
 		}
@@ -199,7 +199,7 @@
     			margin-right: 26px;
     			&-dash {
 				    display: block;
-				    color: #485260;
+				    color: $dark-blue;
 				    font-family: Georgia;
 				    font-size: 16px;
 				    margin-bottom: 13px;
@@ -228,7 +228,7 @@
 			    text-transform: uppercase;
 			    margin-bottom: 35px;
 			    border-top: 1px solid #837878;
-			    display: inline-grid;
+			    display: grid;
 			    vertical-align: bottom;
 			    align-content: end;
 			    height: 90px;
@@ -251,8 +251,8 @@
     			padding: 8px 15px;
     			&-text {
     			    font-size: 16px;
-    			    font-family: Georgia;
-    			    color: #485260;
+    			    font-family: "Georgia";
+    			    color: $dark-blue;
     			    line-height: 2.5;
     			    border-left: 0px;
                     border-bottom: 0px;
@@ -263,16 +263,16 @@
     			    width: 643px;
                     font-weight: 300;
                     &_last {
-                        border-bottom: 1px solid #000;
+                        border-bottom: 1px solid $black;
                     }
     			}
     			&-status {
 				    font-size: 18px;
 				    height: 39px;
-				    border: 1px solid #000;
+				    border: 1px solid $black;
                     border-bottom: 0px;
                     &_last{
-                        border-bottom: 1px solid #000;
+                        border-bottom: 1px solid $black;
                     }
     			}
     		}
