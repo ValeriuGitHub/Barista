@@ -1,0 +1,14 @@
+.question-wrapper
+	.container
+		.question
+			h1.main-title.question__title
+				| Have questions?
+			h2.small-title.question__under-title
+				| Leave a request and we will contact you shortly
+			form(method="POST" action="https://peaceful-island-78575.herokuapp.com/api").question__form
+			.form__input-wrapper
+				input.question__input.question__input-name(placeholder="Your Name" type="name")
+			.form__input-wrapper
+				input.question__input.question__input-number(placeholder="Contact number" type="phone")
+				button(type="submit").question__submit
+					| Send

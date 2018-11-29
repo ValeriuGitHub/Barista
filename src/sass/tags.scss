@@ -57,15 +57,9 @@ button {
 // input[type="search"]::-search-results-button,
 // input[type="search"]::-search-results-decoration { display: none; }
 // // forms
-// input {outline:none;}
+input {outline:none;}
 // a:active, a:focus { outline: none; }
-// li:focus {
-//     outline-style: none;
-//     outline-width: 0px !important;
-//     outline-color: none !important;
-// }
-// input::placeholder { color: $black; }
-// input::placeholder { color: $black; }
+input::placeholder { color: $black; }
 // textarea {outline:none;}
 // textarea::placeholder { color: $black; }
 // textarea::-input-placeholder { color: $black; }
