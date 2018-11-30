@@ -4,7 +4,7 @@
 	&-wrapper {
 		padding-top: 128px;
 		@extend %clearfix;
-		padding-bottom: 270px;
+		padding-bottom: 261px;
 	}
 	&__title {
 		border-bottom: 1px solid $black;
@@ -33,6 +33,9 @@
 		    margin-bottom: 0;
 		    height: 29px;
 		    margin-top: 34px;
+			&:focus {
+		    	border-bottom-color: rbga(#fff, 0.5);
+		    }
 	    }
 	}
 	&__submit {

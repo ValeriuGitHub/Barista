@@ -58,6 +58,7 @@ button {
 // input[type="search"]::-search-results-decoration { display: none; }
 // // forms
 input {outline:none;}
+input:focus, input:hover {outline: block;}
 // a:active, a:focus { outline: none; }
 input::placeholder { color: $black; }
 // textarea {outline:none;}
