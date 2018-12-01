@@ -29,6 +29,9 @@
 			display: flex;
 			padding-left: 10px;
 			margin-bottom: 54px;
+			@include laptops {
+				justify-content: center;
+			}
 		}
 	}
 	&-bottom {
@@ -37,6 +40,9 @@
 		justify-content: center;
 		font-weight: 300;
 		padding-left: 62.5px;
+		@include laptops {
+			padding-left: 0px;
+		}
 		&__left-text {
 			font-size: 16px;
 			font-family: "Georgia";
@@ -65,6 +71,11 @@
 		width: 1201px;
 		margin-left: 6px;
 		margin-bottom: 35px;
+		@include laptops {
+			width: 970px;
+			display: block;
+			margin: 0 auto 35px;
+		}
 		&__nav {
 			&-list {
 				border-bottom: 1px solid #fff;

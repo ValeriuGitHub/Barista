@@ -5,6 +5,11 @@
 	    height: 100vh;
 	    width: 100%;
     	padding: 27px 45px 0;
+    	min-height: 800px;
+    	overflow: hidden;
+    	@include laptops {
+    		padding: 20px 25px 0px;
+    	}
 	}
 	&-top {
 		display: flex;
@@ -24,10 +29,21 @@
 		    &:before {
 			    width: 1.6%;
 			    left: -43px;
+			    @include desktops {
+			        width: 3.6%;
+			    }
+			    @include laptops {
+			    	width: 12.5px;
+			    	left: -24px;
+			    }
 		    }
 		    &:after {
 			    width: 87%;
 			    left: 15.5%;
+			    @include desktops {
+				    width: 100%;
+				    left: 200px;
+			    }
 		    }
 		}
 		&__img {
@@ -35,6 +51,10 @@
 		    width: 225.5px;
 		    position: relative;
 		    margin-left: 31px;
+		    @include laptops {
+		    	width: 170px;
+		    	margin-left: 0px;
+		    }
 		}
 	}
 	&-navigation {
@@ -79,6 +99,11 @@
   				border-bottom: 3px solid $orange;
   				color: $orange;
   			}
+  			@include laptops {
+  				&:hover {
+  					border: 0;
+  				}
+  			}
 		}
 	}
 	&-phone {
@@ -88,6 +113,10 @@
 		line-height: 1.852;
 		&:hover {
 			color: $orange;
+		}
+		@include laptops {
+		    padding-top: 9px;
+			font-size: 16px;
 		}
 	}
 }

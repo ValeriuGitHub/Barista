@@ -52,20 +52,20 @@
 		}
 		&__img {
 			width: 519px;
-			@include laptops {
+			@include desktops {
 				width: 379px;
 			}
-			&-first {
-  				// width: 379px;
+			@include laptops {
+				width: 280px;
 			}
 			&-second {
 				width: 754px;
-				@include laptops {
+				@include desktops {
 					width: 550px;
 				}
-			}
-			&-third {
-				// width: 379px;
+				@include laptops {
+					width: 410px;
+				}
 			}
 		}
 	}

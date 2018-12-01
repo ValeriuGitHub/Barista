@@ -15,6 +15,11 @@
 		display: flex;
 		justify-content: center;
 		position: relative;
+		@include laptops {
+		    width: 810px;
+		    display: block;
+		    margin: 0 auto;
+	    }
 	}
 	&__main {
 		&-slider {
@@ -42,6 +47,9 @@
 		    letter-spacing: -0.1px;
 		    line-height: 2.2;
 		    margin-bottom: 56px;
+		    @include laptops {
+		    	width: 800px;
+		    }
 		}
 		&-wrapper {
 			position: relative;
@@ -119,12 +127,18 @@
 		    		border-bottom-color: $black;
 		    		border-right-color: $black;
 		    	}
+		    	@include laptops {
+		    		left: -60px;
+		    	}
 		    }
 		    &_right {
 		    	right: -10px;
 		    	&:hover .slider__ctrl_right {
 		    		border-top-color: $black;
 		    		border-left-color: $black;
+		    	}
+		    	@include laptops {
+		    		right: -60px;
 		    	}
 		    }
 		}

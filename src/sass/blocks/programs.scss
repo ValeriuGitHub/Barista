@@ -184,6 +184,9 @@
 			    font-weight: 700;
 			    z-index: -1;
                 pointer-events: none;
+                @include laptops {
+                    left: -289px;
+                }
     		}
     	}
     }
@@ -192,12 +195,23 @@
     		&__list {
     			display: flex;
     			flex-wrap: nowrap;
+                @include laptops {
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    text-align: center;
+                }
     		}
     		&__item {
     			display: flex;
     			flex-direction: column;
     			flex-wrap: nowrap;
     			margin-right: 26px;
+                @include laptops {
+                    margin-bottom: 30px;
+                    &:first-child {
+                        order: 1;
+                    }
+                }
     			&-dash {
 				    display: block;
 				    color: $dark-blue;
@@ -207,6 +221,9 @@
 				    letter-spacing: -0.1px;
 				    margin-left: 9px;
 				    width: 383px;
+                    @include laptops {
+                        width: auto;
+                    }
     				&:before {
 					    content: "-";
 					    margin-right: 2px;
@@ -235,11 +252,26 @@
 			    height: 90px;
 			    margin-left: 8px;
 			    letter-spacing: 1px;
+                @include laptops {
+                    height: auto;
+                    width: auto;
+                    display: flex;
+                    align-content: center;
+                    padding-top: 15px;
+                }
     			&_new-line {
     				display: block;
+                    @include laptops {
+                        padding-right: 5px;
+                    }
     			}
     			&_padding-right {
     			    padding-right: 102px;
+                    @include laptops {
+                        padding-right: 0;
+                        width: 350px;
+                        text-align: center;
+                    }
     			}
     		}
     	}

@@ -12,20 +12,26 @@
     margin: 0;
 }
 
+@mixin desktops() {
+    @media screen and (max-width: 1850px) {
+        @content;
+    }
+}
+
 @mixin laptops() {
-    @media screen and (max-width: 1215px) {
+    @media screen and (max-width: 1530px) {
         @content;
     }
 }
 
 @mixin tablets() {
-    @media screen and (max-width: 864px) {
+    @media screen and (max-width: 1024px) {
         @content;
     }
 }
 
 @mixin phones() {
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 580px) {
         @content;
     }
 }

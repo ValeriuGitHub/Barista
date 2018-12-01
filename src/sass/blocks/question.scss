@@ -1,10 +1,18 @@
 .question {
 	width: 64.5%;
 	float: right;
+	@include laptops {
+	    width: 76.5%;
+    	float: right;
+	}
 	&-wrapper {
 		padding-top: 128px;
 		@extend %clearfix;
 		padding-bottom: 261px;
+		@include laptops {
+			padding-bottom: 200px;
+			border-top: 100px;
+		}
 	}
 	&__title {
 		border-bottom: 1px solid $black;
