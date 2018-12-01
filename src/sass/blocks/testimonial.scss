@@ -1,6 +1,10 @@
 .testimonial {
 	padding-top: 90px;
 	padding-bottom: 107.5px;
+	@include tablets {
+		padding-top: 10px;
+		padding-bottom: 60px;
+	}
 	&__title {
 	    letter-spacing: 4.5px;
 	    margin-bottom: 25px;
@@ -19,6 +23,9 @@
 		    width: 810px;
 		    display: block;
 		    margin: 0 auto;
+	    }
+	    @include tablets {
+	    	width: auto;
 	    }
 	}
 	&__main {
@@ -49,6 +56,9 @@
 		    margin-bottom: 56px;
 		    @include laptops {
 		    	width: 800px;
+		    }
+		    @include tablets {
+		    	width: 400px;
 		    }
 		}
 		&-wrapper {
@@ -130,6 +140,9 @@
 		    	@include laptops {
 		    		left: -60px;
 		    	}
+		    	@include tablets {
+		    		left: 0;
+		    	}
 		    }
 		    &_right {
 		    	right: -10px;
@@ -139,6 +152,9 @@
 		    	}
 		    	@include laptops {
 		    		right: -60px;
+		    	}
+		    	@include tablets {
+		    		right: 0;
 		    	}
 		    }
 		}

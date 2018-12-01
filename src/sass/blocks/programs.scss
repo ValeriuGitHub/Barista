@@ -4,6 +4,10 @@
     padding-top: 80px;
     padding-bottom: 174px;
     width: 100%;
+    @include tablets {
+        padding-bottom: 60px;
+        padding-top: 10px;
+    }
     &__main {
     	&-title {
     		margin-bottom: 28px;
@@ -16,6 +20,9 @@
 				margin-bottom: 10px; 
 				background-size: cover;
 				background-image: url(./img/star.svg);
+                @include tablets {
+                    margin-bottom: 5px;
+                }
     		}
     		&:before {
     			margin-right: 25px;
@@ -31,6 +38,12 @@
 			color: $dark-blue;
 			margin-bottom: 40px;
 			letter-spacing: -0.2px;
+            @include tablets {
+                margin-bottom: 20px;
+            }
+            @include phones {
+                margin-bottom: 10px;
+            }
 		}
     }
     &-tab {
@@ -52,6 +65,10 @@
 		    padding-left: 138px;
 		    padding-right: 138px;
 		    border-bottom: 2px solid #c6c6c6;
+            @include tablets {
+                padding: 0px 20px;
+                margin-bottom: 40px;
+            }
     	}
     	&__item {
 			font-size: 21px;
@@ -78,6 +95,10 @@
 		&__inner {
 			display: flex;
 			margin-bottom: 75px;
+            @include tablets {
+                display: block;
+                margin-bottom: 40px;
+            }
             &-status {
                 &_active {
                     display: block;
@@ -85,10 +106,16 @@
             }
 		   	&-description {
 				padding-bottom: 48px;
+                @include tablets {
+                    padding-bottom: 20px;
+                }
 			}
 			&-table {
 				&-wrapper {
 					padding-left: 8px;
+                    @include tablets {
+                        padding-left: 0px;
+                    }
 				}
 			}
 		}
@@ -98,16 +125,27 @@
     		&__img {
 			    width: 650px;
 			    padding-left: 9px;
+                @include tablets {
+                    min-width: 300px;
+                    width: 100%;
+                    padding-left: 0px;
+                }
 	    		&-wrapper {
 	    			margin-right: 59px;
 				    position: relative;
 				    z-index: 5;
+                    @include tablets {
+                        margin-right: 0px;
+                    }
 	    		}
     		}
     		&__course {
     			padding-top: 10px;
     			position: relative;
     			z-index: 1;
+                @include tablets {
+                    text-align: center;
+                }
     		}
     	}
     }
@@ -295,6 +333,10 @@
     			    letter-spacing: -0.15px;
     			    width: 643px;
                     font-weight: 300;
+                    @include tablets {
+                        width: 490px;
+                        height: auto;
+                    }
                     &_last {
                         border-bottom: 1px solid $black;
                     }
@@ -304,6 +346,9 @@
 				    height: 39px;
 				    border: 1px solid $black;
                     border-bottom: 0px;
+                    @include tablets {
+                        height: 80px;
+                    }
                     &_last{
                         border-bottom: 1px solid $black;
                     }

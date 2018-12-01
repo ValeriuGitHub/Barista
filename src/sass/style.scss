@@ -64,6 +64,14 @@
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 5px;
+    @include tablets {
+        letter-spacing: 4px;
+        font-size: 40px;
+    }
+    @include phones {
+        letter-spacing: 3px;
+        font-size: 30px;
+    }
 }
 
 .small-title {
@@ -73,6 +81,15 @@
     text-align: center;
     font-weight: 300;
     letter-spacing: -0.1px;
+    @include laptops {
+        font-size: 15px;
+    }
+    @include tablets {
+        font-size: 14px;
+    }
+    @include phones {
+        font-size: 13px;
+    }
 }
 
 .container {

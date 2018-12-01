@@ -4,16 +4,25 @@
     width: 100%;
     padding-top: 80px;
     padding-bottom: 148px;
+    @include tablets {
+    	padding-bottom: 200px;
+    }
     &__title {
 		color: #fff;
 		margin: 40px 0px 17px;
 	    letter-spacing: 5px;
+	    @include tablets {
+	    	margin-top: 70px;
+	    }
 		&:before, &:after {
 			content: "";
 			display: inline-block;
 			margin-bottom: 10px;
 		    width: 29px;
 		    height: 14px;
+		    @include tablets {
+		    	margin-bottom: 0px;
+		    }
 		}
 		&:before {
 			background-image: url("./img/gallery-title.svg");
@@ -36,6 +45,9 @@
 			margin-bottom: 75px;
 			letter-spacing: -0.1px;
 			line-height: 1.5;
+			@include tablets {
+				margin-bottom: 30px;
+			}
 		}
 	}
 	&-slider {
@@ -46,6 +58,10 @@
 			display: flex;
 		    justify-content: space-between;
 		    margin-bottom: 40px;
+		    @include tablets {
+		    	flex-wrap: wrap;
+    			justify-content: space-around;
+		    }
 		}
 		&__item {
 
@@ -58,6 +74,11 @@
 			@include laptops {
 				width: 280px;
 			}
+			@include tablets {
+				width: 100%;
+				margin-bottom: 10px;
+				padding: 5px 20px;
+			}
 			&-second {
 				width: 754px;
 				@include desktops {
@@ -65,6 +86,9 @@
 				}
 				@include laptops {
 					width: 410px;
+				}
+				@include tablets {
+					width: 100%;
 				}
 			}
 		}
@@ -95,6 +119,9 @@
 			border: 1px solid $orange;
 			margin: 0 105.5px;
 			position: relative;
+			@include tablets {
+			    margin: 0 76.5px;
+			}
 			&:hover {
 				border: 1px solid #fff;
 			}

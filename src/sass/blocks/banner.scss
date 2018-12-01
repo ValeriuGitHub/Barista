@@ -1,11 +1,17 @@
 .banner {
 	padding: 38px 0px 0px 0px;
+	@include tablets {
+		padding: 30px 0px 0px 0px;
+	}
 	&-stars {
 		&__img {
 			margin: 0 auto;
 			display: block;
 		    width: 90px;
 		    margin-bottom: 32px;
+		    @include tablets {
+		    	margin-bottom: 22px;
+		    }
 		}
 	}
 	&__main {
@@ -14,6 +20,9 @@
     	color: #fff;
     	letter-spacing: 6.35px;
     	margin-bottom: 36px;
+    	@include tablets {
+    		font-size: 40px;
+    	}
 			&_orange {
 				color: $orange;
 			}
@@ -37,12 +46,18 @@
 				background-image: url("./img/before-line.svg");
 				margin-right: 85px;
 			    margin-top: 4px;
+			    @include tablets {
+			    	margin-right: 10px;
+			    }
 			}
 			&:after {
 				height: 16px;
 				margin-left: 85px;
 		    	transform: rotate(-180deg);
 				background-image: url("./img/before-line.svg");
+				@include tablets {
+			    	margin-left: 10px;
+			    }
 			}
 		}
 	}
@@ -52,6 +67,9 @@
 			color: #fff;
 			font-weight: 300;
 			margin-bottom: 29.5px;
+			@include tablets {
+				margin-bottom: 20px;
+			}
 		}
 		&-img {
 			display: block;
@@ -60,6 +78,15 @@
 			&-wrapper {
 				margin: 0 auto;
 				margin-bottom: 71px;
+				@include laptops {
+					margin-bottom: 50px;
+				}
+				@include tablets {
+					margin-bottom: 40px;
+				}
+				@include phones {
+					margin-bottom: 25px;
+				}
 			}
 		}
 	}
