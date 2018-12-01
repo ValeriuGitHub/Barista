@@ -86,5 +86,8 @@
 		font-size: 25px;
 		font-family: "Roboto";
 		line-height: 1.852;
+		&:hover {
+			color: $orange;
+		}
 	}
 }

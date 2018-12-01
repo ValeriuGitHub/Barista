@@ -6,11 +6,11 @@
 			h2.small-title.question__under-title
 				| Leave a request and we will contact you shortly
 			form(method="POST" action="https://peaceful-island-78575.herokuapp.com/api").question__form
-			.form__input-wrapper
-				input.question__input.question__input-name(placeholder="Your Name" type="name" name="name")
-			.form__input-wrapper
-				input.question__input.question__input-number(placeholder="Contact number" type="phone" name="name")
-				button(type="submit").question__submit
-					| Send
-					.question__line
-					.question__arrow
+				.form__input-wrapper
+					input.question__input.question__input-name(placeholder="Your Name" type="name" name="name" required)
+				.form__input-wrapper
+					input.question__input.question__input-number(placeholder="Contact number" type="phone" name="number" required)
+					button(type="submit").question__submit
+						| Send
+						.question__line
+						.question__arrow
