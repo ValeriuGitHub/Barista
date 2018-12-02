@@ -134,3 +134,42 @@
 		}
 	}
 }
+
+.ancher-top {
+    display: none;
+    position: fixed;
+    top: 10%;
+    left: 95%;
+    border-color: $black;
+    background-color: $orange;
+    @include tablets {
+    	left: 88.5%;
+    }
+    @include phones {
+    	width: 30px;
+    	height: 30px;
+    }
+    &_active {
+    	display: block;
+    }
+	&:hover .ancher-top__arrow {
+		opacity: 0.9;
+		border-color: #fff;
+		border-bottom-color: transparent;
+	    border-right-color: transparent;
+	}
+    &__arrow {
+    	border: 3px solid $black;
+    	border-bottom-color: transparent;
+    	border-right-color: transparent;
+    	@include phones {
+			border: 3px solid #000;
+			border-bottom-color: transparent;
+			border-right-color: transparent;
+			width: 10px;
+			top: 12px;
+			left: 9px;
+			height: 10px;
+    	}
+    }
+}

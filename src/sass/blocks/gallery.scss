@@ -159,7 +159,7 @@
 		    	transform: rotate(133deg);
 		    }
 		    &_right {
-		    	margin-left: -14px;
+		    	margin-right: -14px;
 				transform: rotate(-47deg);
 		    }
 		}
@@ -175,12 +175,13 @@
 	    		display: none;
 	    	}
 	    	&_left {
-	    		left: 28px;
+	    		left: 25px;
 		   		@include phones {
 					left: -7px;
 				}
 	    	}
 	    	&_right {
+	    		right: 12px;
 		   		@include phones {
 					right: -7px;
 				}
