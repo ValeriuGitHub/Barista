@@ -7,6 +7,9 @@
     @include tablets {
     	padding-bottom: 200px;
     }
+    @include phones {
+    	padding-bottom: 100px;
+    }
     &__title {
 		color: #fff;
 		margin: 40px 0px 17px;
@@ -28,10 +31,16 @@
 			background-image: url("./img/gallery-title.svg");
 			margin-right: 33px;
 			transform: rotate(180deg);
+			@include phones {
+				display: none;
+			}
 		}
 		&:after {
 			margin-left: 33px;
 			background-image: url("./img/gallery-title.svg");
+			@include phones {
+				display: none;
+			}
 		}
 	}
 	&__under {
@@ -46,6 +55,11 @@
 			letter-spacing: -0.1px;
 			line-height: 1.5;
 			@include tablets {
+				margin-bottom: 30px;
+			}
+			@include phones {
+				width: 300px;
+				margin: 0px auto;
 				margin-bottom: 30px;
 			}
 		}
@@ -122,6 +136,10 @@
 			@include tablets {
 			    margin: 0 76.5px;
 			}
+			@include phones {
+				display: block;
+				margin: 0px 20px;
+			}
 			&:hover {
 				border: 1px solid #fff;
 			}
@@ -152,11 +170,20 @@
 	    	top: 50%;
 	    	background-color: #fff;
 	    	width: 106px;
+	    	@include phones {
+	    		width: 80px;
+	    		display: none;
+	    	}
 	    	&_left {
 	    		left: 28px;
+		   		@include phones {
+					left: -7px;
+				}
 	    	}
 	    	&_right {
-	    		right: 28px;
+		   		@include phones {
+					right: -7px;
+				}
 	    	}
 		}
 	}

@@ -8,12 +8,21 @@
 	&__title {
 	    letter-spacing: 4.5px;
 	    margin-bottom: 25px;
+	    @include phones {
+	    	margin-bottom: 15px;
+	    }
 	}
 	&__under-title {
   		color: $dark-blue;
   		letter-spacing: -0.15px;
   		font-weight: 300;
   		margin-bottom: 74px;
+  		@include tablets {
+  			margin-bottom: 54px;
+  		}
+  		@include phones {
+  			margin-bottom: 20px;
+  		}
 	}
 	&__slider {
 		display: flex;
@@ -58,7 +67,7 @@
 		    	width: 800px;
 		    }
 		    @include tablets {
-		    	width: 400px;
+		    	width: auto;
 		    }
 		}
 		&-wrapper {
@@ -131,6 +140,10 @@
 		    align-items: center;
 		    top: 50%;
 		    margin-top: -26px;
+		    @include phones {
+		    	top: 33%;
+		    	margin-top: 0px;
+		    }
 		    &_left {
 		    	left: -10px;
 		    	&:hover .slider__ctrl_left {

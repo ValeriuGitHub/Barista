@@ -22,7 +22,7 @@
 		}
 		@include phones {
 			padding-top: 50px;
-			padding-bottom: 35px;
+			padding-bottom: 0px;
 		}
 	}
 	&__title {
@@ -75,6 +75,10 @@
 		position: relative;
 		@include tablets {
 			padding: 15px 60px;
+		}
+		@include phones {
+			padding: 0px 30px;
+			font-size: 14px;
 		}
 		&:hover {
 			border: 1px solid rgba($black, 0.7);

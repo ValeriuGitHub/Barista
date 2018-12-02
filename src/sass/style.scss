@@ -66,11 +66,11 @@
     letter-spacing: 5px;
     @include tablets {
         letter-spacing: 4px;
-        font-size: 40px;
+        font-size: 38px;
     }
     @include phones {
         letter-spacing: 3px;
-        font-size: 30px;
+        font-size: 27px;
     }
 }
 

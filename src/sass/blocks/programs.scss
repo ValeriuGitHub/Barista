@@ -8,6 +8,9 @@
         padding-bottom: 60px;
         padding-top: 10px;
     }
+    @include phones {
+        padding-bottom: 0px;
+    }
     &__main {
     	&-title {
     		margin-bottom: 28px;
@@ -69,6 +72,10 @@
                 padding: 0px 20px;
                 margin-bottom: 40px;
             }
+            @include phones {
+                padding: 0px 0px;
+                margin-bottom: 30px;
+            }
     	}
     	&__item {
 			font-size: 21px;
@@ -78,6 +85,12 @@
     		letter-spacing: 2.5px;
             border-bottom: 2px solid transparent;
             opacity: 0.5;
+            @include tablets {
+                font-size: 20px;
+            }
+            @include phones {
+                font-size: 14px;
+            }
             &_active {
                 opacity: 1;
                 border-bottom: 2px solid $black;
@@ -109,12 +122,19 @@
                 @include tablets {
                     padding-bottom: 20px;
                 }
+                @include phones {
+                    padding-bottom: 0px;
+                }
 			}
 			&-table {
 				&-wrapper {
 					padding-left: 8px;
                     @include tablets {
                         padding-left: 0px;
+                    }
+                    @include phones {
+                        display: none;
+                        padding-bottom: 0px;
                     }
 				}
 			}
@@ -156,6 +176,14 @@
     		color: #2b2b2b;
     		font-family: "Georgia-Bold";
     		margin-bottom: 62px;
+            @include tablets {
+                font-size: 28px;
+                margin-bottom: 45px;
+            }
+            @include phones {
+                font-size: 24px;
+                margin-bottom: 30px;
+            }
     	}
     	&__certificate {
     		display: flex;
@@ -186,6 +214,12 @@
     	&__price {
 			font-size: 58px;
 			font-weight: bold;
+            @include tablets {
+                font-size: 45px;
+            }
+            @include tablets {
+                font-size: 38px;
+            }
     		&-wrapper {
     			display: flex;
     			align-items: center;
@@ -195,6 +229,14 @@
     		&_smaller {
 				font-size: 31.3px;
 				margin-top: 20px;
+                @include tablets {
+                    font-size: 28px;
+                    margin-top: 10px;
+                }
+                @include tablets {
+                    font-size: 24px;
+                    margin-top: 6px;
+                }
     		}
     	}
     	&__button {
@@ -225,6 +267,9 @@
                 @include laptops {
                     left: -289px;
                 }
+                @include tablets {
+                    display: none;
+                }
     		}
     	}
     }
@@ -250,6 +295,9 @@
                         order: 1;
                     }
                 }
+                @include phones {
+                    margin-right: 0px;
+                }
     			&-dash {
 				    display: block;
 				    color: $dark-blue;
@@ -274,6 +322,9 @@
     			}
     			&:last-child {
     				margin-left: 24px;
+                    @include phones {
+                        margin-left: 0px;
+                    }
     			}
     		}
     		&__title {
@@ -296,11 +347,22 @@
                     display: flex;
                     align-content: center;
                     padding-top: 15px;
+                    font-size: 14px;
+                }
+                @include phones {
+                    margin-left: 0px;
+                    width: 100%;
+                    margin-bottom: 15px;
+                    text-align: center;
+                    padding: 15px 34px 0px;
                 }
     			&_new-line {
     				display: block;
                     @include laptops {
                         padding-right: 5px;
+                    }
+                    @include phones {
+                        display: none;
                     }
     			}
     			&_padding-right {
@@ -309,6 +371,11 @@
                         padding-right: 0;
                         width: 350px;
                         text-align: center;
+                    }
+                    @include phones {
+                        width: 300px;
+                        padding-right: 0px;
+                        padding-left: 0px;
                     }
     			}
     		}

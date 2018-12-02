@@ -9,7 +9,7 @@
 	    	padding-bottom: 25px;
 	    }
 	    @include phones {
-	    	padding-top: 90px;
+	    	padding-top: 140px;
 	    	padding-bottom: 20px;
 	    }
 	}
@@ -35,6 +35,11 @@
 		letter-spacing: -0.1px;
 		@include tablets {
 			width: auto;
+			font-size: 14px;
+			margin-right: 0px;
+		}
+		@include phones {
+			font-size: 13px;
 		}
 		&:last-child {
 			margin-right: 0px;
@@ -59,6 +64,9 @@
 		padding-left: 62.5px;
 		@include laptops {
 			padding-left: 0px;
+		}
+		@include phones {
+			text-align: center;
 		}
 		&__left-text {
 			font-size: 16px;
@@ -86,6 +94,10 @@
 			height: 29px;
 			background-color: #fff;
 			width: 1px;
+			@include phones {
+			    margin: 12px 10px 0 9px;
+    			height: 43px;
+			}
 		}
 	}
 	&-box {
@@ -95,11 +107,10 @@
 		margin-left: 6px;
 		margin-bottom: 35px;
 		@include laptops {
-			width: 970px;
+		    width: auto;
 			display: block;
 		}
 		@include tablets {
-		    width: auto;
 		    margin-bottom: 25px;
 		}
 		@include phones {
@@ -119,6 +130,10 @@
 			    &:last-child {
 			    	margin-right: 0px;
 			    }
+			    @include phones {
+			    	font-size: 10px;
+			    	margin-right: 8px;
+			    }
 			   	&:after {
 	  				content: "";
 					width: 5px;
@@ -133,6 +148,9 @@
 					@include tablets {
 					    margin-top: -5px;
     					left: -24%;
+					}
+					@include phones {
+						display: none;
 					}
 	  			}
 				&:first-child {
@@ -189,6 +207,9 @@
 			@include tablets {
 			    padding: 39.8px 10px;
 			}
+			@include phones {
+				padding: 20px 5px;
+			}
 		}
 	}
 }
@@ -233,6 +254,12 @@
 		    margin-top: 13px;
 		    margin-bottom: 45px;
 		    letter-spacing: 1px;
+		    @include tablets {
+		    	font-size: 13.5px;
+		    }
+		    @include phones {
+		    	font-size: 12px;
+		    }
 		}
 	}
 }
