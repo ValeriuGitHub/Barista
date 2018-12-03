@@ -140,6 +140,7 @@
     position: fixed;
     top: 5%;
     left: 95%;
+    z-index: 10;
     border-color: $black;
     background-color: $orange;
     @include laptops {

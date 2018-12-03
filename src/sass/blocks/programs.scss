@@ -267,6 +267,7 @@
                 pointer-events: none;
                 @include laptops {
                     left: -289px;
+                    font-size: 160px;
                 }
                 @include tablets {
                     display: none;

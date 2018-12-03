@@ -45,6 +45,23 @@ $(window).scroll(function() {
 
 // Gallery SLide
 
+
+// total of items
+
+let	totalAmount = $('.gallery-slider__item').length;
+$("#total-amount").text(totalAmount);
+
+// counter
+
+var $counter = $('#counter');
+var $slickElement = $('.gallery-slider__list');
+
+$slickElement.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
+    //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)
+    var i = (currentSlide ? currentSlide : 0) + 1;
+    $counter.text(i);
+});
+
 $('.gallery-slider__list').slick({
 	infinite: true,
 	slidesToShow: 3,
@@ -53,7 +70,7 @@ $('.gallery-slider__list').slick({
 	nextArrow: $('.gallery-slider__ctrl-next'),
 	responsive: [
     {
-      breakpoint: 1024,
+      breakpoint: 1025,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,

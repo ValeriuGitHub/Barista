@@ -78,7 +78,10 @@
 		&__img {
 			width: 519px;
 			@include desktops {
-				width: 379px;
+				width: 459px;
+			}
+			@include laptops {
+				width: 300px;
 			}
 			@include tablets {
 				width: 100%;
@@ -91,9 +94,13 @@
 			&-second {
 				width: 754px;
     			margin-left: -80px;
-				@include desktops {
-					width: 550px;
-					margin-left: 0px;
+    			@include desktops {
+    				width: 620px;
+    				margin-left: -27px;
+    			}
+				@include laptops {
+					width: 380px;
+				    margin-left: -19px;
 				}
 				@include tablets {
 					width: 100%;
@@ -103,12 +110,18 @@
 			&-third {
 				margin-left: 95px;
 				@include desktops {
+					margin-left: 126px;
+				}
+				@include laptops {
+				    margin-left: 42px;
+				}
+				@include tablets {
 					margin-left: 0px;
 				}
 			}
 			&-first {
 				margin-left: -20px;
-				@include desktops {
+				@include laptops {
 					margin-left: 0px;
 				}
 			}
@@ -117,6 +130,12 @@
 	&-slider {
 		&__item {
 			margin-left: 20px;
+			@include desktops {
+				margin-left: 20px;
+			}
+			@include laptops {
+				margin-left: 0px;
+			}
 			@include tablets {
 				margin-left: 0px;
 			}
