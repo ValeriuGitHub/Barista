@@ -69,45 +69,58 @@
 			margin-bottom: 60px;
 		}
 		&__list {
-			display: flex;
-		    justify-content: space-between;
 		    margin-bottom: 40px;
 		    @include tablets {
 		    	flex-wrap: wrap;
     			justify-content: space-around;
 		    }
 		}
-		&__item {
-
-		}
 		&__img {
 			width: 519px;
 			@include desktops {
 				width: 379px;
 			}
-			@include laptops {
-				width: 280px;
-			}
 			@include tablets {
 				width: 100%;
-				margin-bottom: 10px;
-				padding: 5px 20px;
+				margin: 0 auto;
+				padding: 0px 20px 10px;
+			}
+			@include phones {
+				padding: 0px 10px 10px;
 			}
 			&-second {
 				width: 754px;
+    			margin-left: -80px;
 				@include desktops {
 					width: 550px;
-				}
-				@include laptops {
-					width: 410px;
+					margin-left: 0px;
 				}
 				@include tablets {
 					width: 100%;
+					margin-left: 0px;
+				}
+			}
+			&-third {
+				margin-left: 95px;
+				@include desktops {
+					margin-left: 0px;
+				}
+			}
+			&-first {
+				margin-left: -20px;
+				@include desktops {
+					margin-left: 0px;
 				}
 			}
 		}
 	}
 	&-slider {
+		&__item {
+			margin-left: 20px;
+			@include tablets {
+				margin-left: 0px;
+			}
+		}
 		&-nav {
 			display: flex;
 			justify-content: center;

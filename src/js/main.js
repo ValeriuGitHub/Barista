@@ -45,16 +45,24 @@ $(window).scroll(function() {
 
 // Gallery SLide
 
-let itemLength = $('.gallery-slider__item').length;
-console.log(itemLength);
-
-// $('.gallery-slider__list').slick({
-// 	// infinite: true,
-// 	slidesToShow: itemLength,
-// 	slidesToScroll: 1,
-// 	prevArrow: $('.gallery-slider__ctrl-prev'),
-// 	nextArrow: $('.gallery-slider__ctrl-next'),
-// });
+$('.gallery-slider__list').slick({
+	infinite: true,
+	slidesToShow: 3,
+	slidesToScroll: 3,
+	prevArrow: $('.gallery-slider__ctrl-prev'),
+	nextArrow: $('.gallery-slider__ctrl-next'),
+	responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    }
+  ]
+});
 
 // Testimonials slider
 
