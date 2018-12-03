@@ -5,9 +5,11 @@
     padding-top: 80px;
     padding-bottom: 148px;
     @include tablets {
-    	padding-bottom: 200px;
+    	padding-top: 40px;
+    	padding-bottom: 130px;
     }
     @include phones {
+    	padding-top: 20px;
     	padding-bottom: 100px;
     }
     &__title {
@@ -81,7 +83,7 @@
 				width: 459px;
 			}
 			@include laptops {
-				width: 300px;
+				width: 312px;
 			}
 			@include tablets {
 				width: 100%;
@@ -99,8 +101,8 @@
     				margin-left: -27px;
     			}
 				@include laptops {
-					width: 380px;
-				    margin-left: -19px;
+				    width: 419px;
+				    margin-left: -33px;
 				}
 				@include tablets {
 					width: 100%;

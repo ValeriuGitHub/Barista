@@ -74,7 +74,8 @@
 		}
 		&-wrapper {
 			position: relative;
-			margin-bottom: 35px;
+			width: 170px;
+			margin: 0 auto 35px;
 		}
 		&-icon {
 		    color: #fff;
@@ -86,15 +87,11 @@
 			width: 38.5px;
 			height: 38.5px;
 			position: absolute;
-		    top: 13%;
-			right: 42.3%;
+		    top: 22px;
+		    right: -7px;
     	    display: flex;
     		justify-content: center;
    			align-items: center;
-   			@include tablets {
-				right: 37%;
-				top: 3%;
-   			}
    			&:hover {
    				background-color: rgba(#4267b2, 0.9);
    			}

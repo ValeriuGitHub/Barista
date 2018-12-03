@@ -151,11 +151,11 @@
                     padding-left: 0px;
                 }
 	    		&-wrapper {
-	    			margin-right: 61px;
+	    			padding-right: 61px;
 				    position: relative;
 				    z-index: 5;
                     @include tablets {
-                        margin-right: 0px;
+                        padding-right: 0px;
                     }
 	    		}
     		}
@@ -346,8 +346,7 @@
                 @include laptops {
                     height: auto;
                     width: auto;
-                    display: flex;
-                    align-content: center;
+                    text-align: center;
                     padding-top: 15px;
                     font-size: 14px;
                 }

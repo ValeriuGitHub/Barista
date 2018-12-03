@@ -66,8 +66,8 @@ $('.gallery-slider__list').slick({
 	infinite: true,
 	slidesToShow: 3,
 	slidesToScroll: 3,
-	prevArrow: $('.gallery-slider__ctrl-prev'),
-	nextArrow: $('.gallery-slider__ctrl-next'),
+	prevArrow: $('#gallery-prev'),
+	nextArrow: $('#gallery-next'),
 	responsive: [
     {
       breakpoint: 1025,
@@ -84,8 +84,8 @@ $('.gallery-slider__list').slick({
 // Testimonials slider
 
 $('.main-slider__list').slick({
-	prevArrow: $('.slider__ctrl-wrapper_left'),
-	nextArrow: $('.slider__ctrl-wrapper_right'),
+	prevArrow: $('#slider__ctrl-wrapper_left'),
+	nextArrow: $('#slider__ctrl-wrapper_right'),
     dots: true,
 	dotsClass: "my-dots",
 });
