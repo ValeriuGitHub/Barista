@@ -56,20 +56,46 @@ console.log(itemLength);
 // 	nextArrow: $('.gallery-slider__ctrl-next'),
 // });
 
-// testimonials
-
-// $('.main-slider__list').slick({
-// 	prevArrow: $('.slider__ctrl-wrapper_left'),
-// 	nextArrow: $('.slider__ctrl-wrapper_right'),
-// });
-
-function activeDots {
-
-}
+// Testimonials slider
 
 $('.main-slider__list').slick({
 	prevArrow: $('.slider__ctrl-wrapper_left'),
 	nextArrow: $('.slider__ctrl-wrapper_right'),
     dots: true,
 	dotsClass: "my-dots",
+});
+
+// Partners slider
+
+$('.partners__list').slick({
+	prevArrow: $('#partners-left'),
+	nextArrow: $('#partners-right'),
+	infinite: true,
+	slidesToShow: 6,
+	slidesToScroll: 3,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
 });

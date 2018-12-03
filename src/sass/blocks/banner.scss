@@ -142,6 +142,9 @@
     left: 95%;
     border-color: $black;
     background-color: $orange;
+    @include laptops {
+    	left: 92%;
+    }
     @include tablets {
     	left: 88.5%;
     }
