@@ -25,8 +25,6 @@
   		}
 	}
 	&__slider {
-		display: flex;
-		justify-content: center;
 		position: relative;
 		@include laptops {
 		    width: 810px;
@@ -39,7 +37,8 @@
 	}
 	&__main {
 		&-slider {
-			display: flex;
+			display: block;
+			margin: 0 auto;
 		    flex-direction: column;
 		    align-items: center;
 		}
@@ -47,12 +46,14 @@
 	&__avatar {
 		display: block;
 		width: 170px;
+		margin: 0 auto;
+		position: relative;
 		&-title {
 			font-size: 17.5px;
 			font-family: "Roboto";
 			text-transform: uppercase;
 		    letter-spacing: 1.5px;
-		    margin-bottom: 0px;
+    		margin-bottom: 14px;
 		}
 		&-text {
 		    width: 872px;
@@ -62,7 +63,8 @@
 		    font-family: Georgia;
 		    letter-spacing: -0.1px;
 		    line-height: 2.2;
-		    margin-bottom: 56px;
+		    margin: 0 auto;
+		    margin-bottom: 37px;
 		    @include laptops {
 		    	width: 800px;
 		    }
@@ -85,7 +87,7 @@
 			height: 38.5px;
 			position: absolute;
 		    top: 13%;
-    		right: -5px;
+			right: 42.3%;
     	    display: flex;
     		justify-content: center;
    			align-items: center;
@@ -140,6 +142,7 @@
 		    align-items: center;
 		    top: 50%;
 		    margin-top: -26px;
+		    z-index: 5;
 		    @include phones {
 		    	top: 33%;
 		    	margin-top: 0px;
@@ -172,4 +175,93 @@
 		    }
 		}
 	}
+}
+
+.main {
+	&-slider {
+		&__list {
+		    width: 100%;
+		    display: block;
+		}
+		&__item {
+			&_active {
+				display: block;
+			}
+		}
+		&__title {
+			text-align: center;
+		}
+	}
+}
+
+// Dots for slider
+
+.my-dots {
+  position: absolute;
+  bottom: -50px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  margin-left: 5px;
+}
+
+.my-dots li {
+  position: relative;
+  display: inline-block;
+  width: 25px;
+  height: 30px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.my-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+
+.my-dots li button:hover,
+.my-dots li button:focus {
+  outline: none;
+}
+
+.my-dots li button:hover:before,
+.my-dots li button:focus:before {
+  opacity: 1;
+}
+
+.my-dots li button:before {
+	font-family: 'slick';
+	font-size: 6px;
+	line-height: 20px;
+	position: absolute;
+	top: 0;
+	left: 0;
+    width: 15.5px;
+    height: 15.5px;
+	content: '•';
+	border-radius: 50%;
+	background-color: $black;
+	text-align: center;
+	opacity: 1;
+	color: black;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.my-dots li.slick-active button:before {
+  opacity: 1;
+  background-color: $orange;
+  color: black;
 }

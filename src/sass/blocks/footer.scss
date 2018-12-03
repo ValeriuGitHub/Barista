@@ -21,6 +21,7 @@
 		line-height: 1.2;
 		display: block;
 		margin-bottom: 33px;
+		padding-left: 6px;
 		@include tablets {
 			width: auto;
 		}
@@ -260,6 +261,9 @@
 		    @include phones {
 		    	font-size: 12px;
 		    }
+		}
+		&__hello {
+			margin-top: 9px;
 		}
 	}
 }
