@@ -1,0 +1,438 @@
+.program {
+	background: url("/img/programs-bg.jpg") center no-repeat;
+	background-size: cover;
+	padding-top: 80px;
+	padding-bottom: 174px;
+	width: 100%;
+	@include tablets {
+		padding-bottom: 60px;
+		padding-top: 10px;
+	}
+	@include phones {
+		padding-bottom: 0px;
+	}
+	&__main {
+		&-title {
+			margin-bottom: 28px;
+			letter-spacing: 4.5px;
+			&:before, &:after {
+				content: "";
+				display: inline-block;
+				width: 15px;
+				height: 15px;
+				margin-bottom: 10px; 
+				background-size: cover;
+				background-image: url("./img/star.svg");
+				@include tablets {
+					margin-bottom: 5px;
+				}
+			}
+			&:before {
+				margin-right: 25px;
+			}
+			&:after {
+				margin-left: 25px;
+			}
+		}
+	}
+	&__under {
+		&-title {
+			font-weight: 300;
+			color: $dark-blue;
+			margin-bottom: 40px;
+			letter-spacing: -0.2px;
+			@include tablets {
+				margin-bottom: 20px;
+			}
+			@include phones {
+				margin-bottom: 10px;
+			}
+		}
+	}
+	&-tab {
+		&__table {
+			&-title {
+				font-size: 17.5px;
+				text-transform: uppercase;
+				font-family: "Roboto";
+				font-weight: 700;
+				letter-spacing: 1px;
+				margin-bottom: 20px;
+			}
+		}
+		&__list {
+			@extend %list;
+			display: flex;
+			justify-content: center;
+			text-align: center;
+			margin-bottom: 93px;
+			padding-left: 138px;
+			padding-right: 138px;
+			border-bottom: 2px solid #c6c6c6;
+			@include tablets {
+				padding: 0px 20px;
+				margin-bottom: 40px;
+			}
+			@include phones {
+				padding: 0px 0px;
+				margin-bottom: 30px;
+			}
+		}
+		&__item {
+			font-size: 21px;
+			font-family: "Roboto";
+			text-transform: uppercase;
+			flex-basis: 100%;
+			letter-spacing: 2.5px;
+			border-bottom: 2px solid transparent;
+			opacity: 0.5;
+			@include tablets {
+				font-size: 20px;
+			}
+			@include phones {
+				font-size: 14px;
+			}
+			&_active {
+				opacity: 1;
+				border-bottom: 2px solid #000;
+			}
+			&:hover {
+				opacity: 0.8;
+			}
+		}
+		&__link {
+			padding: 50px 0px 34px;
+			color: #000;
+			z-index: 10;
+			position: relative;
+		}
+		&__inner {
+			display: flex;
+			margin-bottom: 75px;
+			@include tablets {
+				display: block;
+				margin-bottom: 40px;
+			}
+			&-status {
+				&_active {
+					display: block;
+				}
+			}
+			&-description {
+				padding-bottom: 48px;
+				@include tablets {
+					padding-bottom: 20px;
+				}
+				@include phones {
+					padding-bottom: 0px;
+				}
+			}
+			&-table {
+				&-wrapper {
+					padding-left: 8px;
+					@include tablets {
+						padding-left: 0px;
+					}
+					@include phones {
+						display: none;
+						padding-bottom: 0px;
+					}
+				}
+			}
+		}
+	}
+	.tab {
+		&-inner {
+			&__img {
+				width: 650px;
+				padding-left: 9px;
+				@include tablets {
+					min-width: 300px;
+					width: 100%;
+					padding-left: 0px;
+				}
+				&-wrapper {
+					padding-right: 61px;
+					position: relative;
+					z-index: 5;
+					@include tablets {
+						padding-right: 0px;
+					}
+				}
+			}
+			&__course {
+				padding-top: 10px;
+				position: relative;
+				z-index: 1;
+				@include tablets {
+					text-align: center;
+				}
+			}
+		}
+	}
+	.course {
+		&__title {
+			font-size: 30px;
+			font-weight: bold;
+			color: #2b2b2b;
+			font-family: "Georgia-Bold";
+			margin-bottom: 62px;
+			@include tablets {
+				font-size: 28px;
+				margin-bottom: 45px;
+			}
+			@include phones {
+				font-size: 24px;
+				margin-bottom: 30px;
+			}
+		}
+		&__certificate {
+			display: flex;
+			align-items: center;
+			margin-bottom: 20px;
+			&-img {
+				width: 30px;
+			}
+			&-text {
+				margin-left: 15px;
+				font-weight: 300;
+				font-family: "Georgia";
+			}
+		}
+		&__time {
+			display: flex;
+			align-items: center;
+			margin-bottom: 10.5px;
+			&-text {
+				margin-left: 15px;
+				font-weight: 300;
+				font-family: "Georgia";
+			}
+			&-img {
+				width: 30px;
+			}
+		}
+		&__price {
+			font-size: 58px;
+			font-weight: bold;
+			@include tablets {
+				font-size: 45px;
+			}
+			@include tablets {
+				font-size: 38px;
+			}
+			&-wrapper {
+				display: flex;
+				align-items: center;
+				margin-bottom: 16px;
+				font-family: "Georgia-Bold";
+			}
+			&_smaller {
+				font-size: 31.3px;
+				margin-top: 20px;
+				@include tablets {
+					font-size: 28px;
+					margin-top: 10px;
+				}
+				@include tablets {
+					font-size: 24px;
+					margin-top: 6px;
+				}
+			}
+		}
+		&__button {
+			padding: 20px 40px;
+			background-color: #000;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			font-family: "Roboto Black";
+			width: 244px;
+			font-size: 14px;
+			text-align: center;
+			color: #fff;
+			&:hover {
+				opacity: 0.8;
+			}
+		}
+		&__back {
+			&-title {
+				position: absolute;
+				top: -36%;
+				left: -59%;
+				text-transform: uppercase;
+				font-size: 200px;
+				color: #ddd;
+				font-family: Roboto;
+				font-weight: 700;
+				z-index: -1;
+				pointer-events: none;
+				@include laptops {
+					left: -289px;
+					font-size: 160px;
+				}
+				@include tablets {
+					display: none;
+				}
+			}
+		}
+	}
+	.inner {
+		&-description {
+			&__list {
+				@extend %list;
+				display: flex;
+				flex-wrap: nowrap;
+				@include laptops {
+					flex-wrap: wrap;
+					justify-content: center;
+					text-align: center;
+				}
+				&-dash {
+					@extend %list;
+				}
+			}
+			&__item {
+				display: flex;
+				flex-direction: column;
+				flex-wrap: nowrap;
+				margin-right: 26px;
+				@include laptops {
+					margin-bottom: 30px;
+					&:first-child {
+						order: 1;
+					}
+				}
+				@include phones {
+					margin-right: 0px;
+				}
+				&-dash {
+					display: block;
+					color: $dark-blue;
+					font-family: Georgia;
+					font-size: 16px;
+					margin-bottom: 13px;
+					letter-spacing: -0.1px;
+					margin-left: 9px;
+					width: 383px;
+					@include laptops {
+						width: auto;
+					}
+					&:before {
+						content: "-";
+						margin-right: 2px;
+					}
+					&_without-dash {
+						&:before {
+							content: "";
+						}
+					}
+				}
+				&:last-child {
+					margin-left: 24px;
+					@include phones {
+						margin-left: 0px;
+					}
+				}
+			}
+			&__title {
+				font-size: 17.5px;
+				font-family: "Roboto Black";
+				width: 324px;
+				text-align: left;
+				text-transform: uppercase;
+				margin-bottom: 35px;
+				border-top: 1px solid #837878;
+				display: grid;
+				vertical-align: bottom;
+				align-content: end;
+				height: 90px;
+				margin-left: 8px;
+				letter-spacing: 1px;
+				@include laptops {
+					height: auto;
+					width: auto;
+					text-align: center;
+					padding-top: 15px;
+					font-size: 14px;
+				}
+				@include phones {
+					margin-left: 0px;
+					width: 100%;
+					margin-bottom: 15px;
+					text-align: center;
+					padding: 15px 34px 0px;
+				}
+				&_new-line {
+					display: block;
+					@include laptops {
+						padding-right: 5px;
+					}
+					@include phones {
+						display: none;
+					}
+				}
+				&_padding-right {
+					padding-right: 102px;
+					@include laptops {
+						padding-right: 0;
+						width: 350px;
+						text-align: center;
+					}
+					@include phones {
+						width: 300px;
+						padding-right: 0px;
+						padding-left: 0px;
+					}
+				}
+			}
+		}
+		&-table {
+			&__vertical {
+				display: flex;
+			}
+			&__cell {
+				border: 1px solid #000;
+				padding: 8px 15px;
+				&-text {
+					font-size: 16px;
+					font-family: "Georgia";
+					color: $dark-blue;
+					line-height: 2.5;
+					border-left: 0px;
+					border-bottom: 0px;
+					padding-top: 0px;
+					padding-bottom: 0px;
+					height: 39px;
+					letter-spacing: -0.15px;
+					width: 643px;
+					font-weight: 300;
+					@include tablets {
+						width: 490px;
+						height: auto;
+					}
+					&_last {
+						border-bottom: 1px solid #000;
+					}
+				}
+				&-status {
+					font-size: 18px;
+					height: 39px;
+					border: 1px solid #000;
+					border-bottom: 0px;
+					@include tablets {
+						height: 80px;
+					}
+					&_last{
+						border-bottom: 1px solid #000;
+					}
+				}
+			}
+		}
+	}
+}
+
+.cell-status__cross {
+	color: #c20000;
+	padding: 0px 2px;
+	font-size: 18px;
+}

@@ -1,122 +1,116 @@
 @font-face {
-    font-family: 'Roboto';
-    src: url('fonts/Roboto-Regular.eot');
-    src: url('fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Roboto-Regular.woff2') format('woff2'),
-        url('fonts/Roboto-Regular.woff') format('woff'),
-        url('fonts/Roboto-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'Roboto';
+	src: url('fonts/Roboto-Regular.eot');
+	src: url('fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+		url('fonts/Roboto-Regular.woff2') format('woff2'),
+		url('fonts/Roboto-Regular.woff') format('woff'),
+		url('fonts/Roboto-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-    font-family: 'Roboto';
-    src: url('fonts/Roboto-Black.eot');
-    src: url('fonts/Roboto-Black.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Roboto-Black.woff2') format('woff2'),
-        url('fonts/Roboto-Black.woff') format('woff'),
-        url('fonts/Roboto-Black.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'Roboto';
+	src: url('fonts/Roboto-Black.eot');
+	src: url('fonts/Roboto-Black.eot?#iefix') format('embedded-opentype'),
+		url('fonts/Roboto-Black.woff2') format('woff2'),
+		url('fonts/Roboto-Black.woff') format('woff'),
+		url('fonts/Roboto-Black.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-    font-family: 'Georgia-Bold';
-    src: url('fonts/Georgia-Bold.eot');
-    src: url('fonts/Georgia-Bold.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Georgia-Bold.woff2') format('woff2'),
-        url('fonts/Georgia-Bold.woff') format('woff'),
-        url('fonts/Georgia-Bold.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'Georgia-Bold';
+	src: url('fonts/Georgia-Bold.eot');
+	src: url('fonts/Georgia-Bold.eot?#iefix') format('embedded-opentype'),
+		url('fonts/Georgia-Bold.woff2') format('woff2'),
+		url('fonts/Georgia-Bold.woff') format('woff'),
+		url('fonts/Georgia-Bold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-    font-family: 'Georgia';
-    src: url('fonts/Georgia.eot');
-    src: url('fonts/Georgia.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Georgia.woff2') format('woff2'),
-        url('fonts/Georgia.woff') format('woff'),
-        url('fonts/Georgia.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'Georgia';
+	src: url('fonts/Georgia.eot');
+	src: url('fonts/Georgia.eot?#iefix') format('embedded-opentype'),
+		url('fonts/Georgia.woff2') format('woff2'),
+		url('fonts/Georgia.woff') format('woff'),
+		url('fonts/Georgia.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
 }
 
-.fa-check {
-    color: #6a9c00;
-}
-
-.fa-times {
-    color: #c20000;
-    padding: 0px 2px;
-    font-size: 18px;
+.fa-check_green {
+	color: #6a9c00;
 }
 
 .main-bg {
-    background: url(./img/main-bg.jpg) center no-repeat;
-    background-size: cover;
+	background: url("./img/main-bg.jpg") center no-repeat;
+	background-size: cover;
 }
 
 .main-title {
-    font-size: 50px;
-    font-family: "Roboto";
-    color: $black;
-    text-transform: uppercase;
-    text-align: center;
-    letter-spacing: 5px;
-    @include tablets {
-        letter-spacing: 4px;
-        font-size: 38px;
-    }
-    @include phones {
-        letter-spacing: 3px;
-        font-size: 27px;
-    }
+	font-size: 50px;
+	font-family: "Roboto";
+	color: #000;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 5px;
+	@include tablets {
+		letter-spacing: 4px;
+		font-size: 38px;
+	}
+	@include phones {
+		letter-spacing: 3px;
+		font-size: 27px;
+	}
 }
 
 .small-title {
-    font-size: 16px;
-    font-family: "Georgia";
-    color: $black;
-    text-align: center;
-    font-weight: 300;
-    letter-spacing: -0.1px;
-    @include laptops {
-        font-size: 15px;
-    }
-    @include tablets {
-        font-size: 14px;
-    }
-    @include phones {
-        font-size: 13px;
-    }
+	font-size: 16px;
+	font-family: "Georgia";
+	color: #000;
+	text-align: center;
+	font-weight: 300;
+	letter-spacing: -0.1px;
+	@include laptops {
+		font-size: 15px;
+	}
+	@include tablets {
+		font-size: 14px;
+	}
+	@include phones {
+		font-size: 13px;
+	}
 }
 
 .container {
-    width: 1200px;
-    margin: 0 auto;
-    &_relative {
-        position: relative;
-    }
-    &_flex {
-        display: flex;
-    }
-    @include laptops {
-        min-width: 800px;
-        width: auto;
-        margin: 0 auto;
-        padding: 0px 30px;
-    }
+	width: 1200px;
+	margin: 0 auto;
+	&_relative {
+		position: relative;
+	}
+	&_flex {
+		display: flex;
+	}
+	@include laptops {
+		min-width: 800px;
+		width: auto;
+		margin: 0 auto;
+		padding: 0px 30px;
+	}
 
-    @include tablets {
-        min-width: 440px;
-        margin: 0 auto;
-        padding: 0px 20px;
-    }
+	@include tablets {
+		min-width: 440px;
+		margin: 0 auto;
+		padding: 0px 20px;
+	}
 
-    @include phones {
-        min-width: 300px;
-        margin: 0 auto;
-        padding: 0px 10px;
-    }
+	@include phones {
+		min-width: 300px;
+		margin: 0 auto;
+		padding: 0px 10px;
+	}
 }

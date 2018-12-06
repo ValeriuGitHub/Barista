@@ -1,15 +1,15 @@
 extends ../templates/common.pug
 block variables
-    - var title = "Barista training in Amsterdam";
+	- var title = "Barista training in Amsterdam";
 block content
-    header.header#header
-        include ../blocks/header.pug
-        include ../blocks/banner.pug
-    include ../blocks/programs.pug
-    include ../blocks/gallery.pug
-    .main-bg
-        include ../blocks/testimonial.pug
-        include ../blocks/partner.pug
-        include ../blocks/question.pug
-    footer.footer-wrapper#footer
-        include ../blocks/footer.pug
+	header.header#header
+		include ../blocks/header.pug
+		include ../blocks/banner.pug
+	include ../blocks/program.pug
+	include ../blocks/gallery.pug
+	.main-bg
+		include ../blocks/testimonial.pug
+		include ../blocks/partner.pug
+		include ../blocks/question.pug
+	footer.footer-wrapper#footer
+		include ../blocks/footer.pug

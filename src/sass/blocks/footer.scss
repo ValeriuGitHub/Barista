@@ -1,17 +1,17 @@
 .footer {
 	&-wrapper {
-		background: url(./img/footer-bg.jpg) center no-repeat;
-	    background-size: cover;
-	    padding-top: 147px;
-	    padding-bottom: 34px;
-	    @include tablets {
-	    	padding-top: 110px;
-	    	padding-bottom: 25px;
-	    }
-	    @include phones {
-	    	padding-top: 140px;
-	    	padding-bottom: 20px;
-	    }
+		background: url("./img/footer-bg.jpg") center no-repeat;
+		background-size: cover;
+		padding-top: 147px;
+		padding-bottom: 34px;
+		@include tablets {
+			padding-top: 110px;
+			padding-bottom: 25px;
+		}
+		@include phones {
+			padding-top: 140px;
+			padding-bottom: 20px;
+		}
 	}
 	&__title {
 		font-family: "Roboto Black";
@@ -81,13 +81,13 @@
 			font-family: "Roboto Black";
 			text-transform: uppercase;
 			letter-spacing: 0.5px;
-		    margin-top: 19px;
-		    &_letter-spacing {
-		    	letter-spacing: 1px;
-		    }
-		    @include tablets {
-		    	margin-top: 17px;
-		    }
+			margin-top: 19px;
+			&_letter-spacing {
+				letter-spacing: 1px;
+			}
+			@include tablets {
+				margin-top: 17px;
+			}
 		}
 		&__line {
 			display: block;
@@ -96,47 +96,48 @@
 			background-color: #fff;
 			width: 1px;
 			@include phones {
-			    margin: 12px 10px 0 9px;
-    			height: 43px;
+				margin: 12px 10px 0 9px;
+				height: 43px;
 			}
 		}
 	}
 	&-box {
 		border: 1px solid #fff;
-		background-color: rgba($black, 0.38);
+		background-color: rgba(#000, 0.38);
 		width: 1201px;
 		margin-left: 6px;
 		margin-bottom: 35px;
 		@include laptops {
-		    width: auto;
+			width: auto;
 			display: block;
 		}
 		@include tablets {
-		    margin-bottom: 25px;
+			margin-bottom: 25px;
 		}
 		@include phones {
-		    margin-bottom: 20px;
+			margin-bottom: 20px;
 		}
 		&__nav {
 			&-list {
+				@extend %list;
 				border-bottom: 1px solid #fff;
 				display: flex;
 				justify-content: center;
 			}
 			&-item {
-			    font-size: 12.5px;
-    			margin-right: 45px;
+				font-size: 12.5px;
+				margin-right: 45px;
 				transition: 0.7s;
 				position: relative;
-			    &:last-child {
-			    	margin-right: 0px;
-			    }
-			    @include phones {
-			    	font-size: 10px;
-			    	margin-right: 8px;
-			    }
-			   	&:after {
-	  				content: "";
+				&:last-child {
+					margin-right: 0px;
+				}
+				@include phones {
+					font-size: 10px;
+					margin-right: 8px;
+				}
+				&:after {
+					content: "";
 					width: 5px;
 					height: 5px;
 					border-radius: 50%;
@@ -147,13 +148,13 @@
 					margin-top: -2px;
 					left: -1%;
 					@include tablets {
-					    margin-top: -5px;
-    					left: -24%;
+						margin-top: -5px;
+						left: -24%;
 					}
 					@include phones {
 						display: none;
 					}
-	  			}
+				}
 				&:first-child {
 					&:after {
 						display: none;
@@ -206,7 +207,7 @@
 				color: $orange;
 			}
 			@include tablets {
-			    padding: 39.8px 10px;
+				padding: 39.8px 10px;
 			}
 			@include phones {
 				padding: 20px 5px;
@@ -248,19 +249,19 @@
 			}
 		}
 		&__text {
-		    width: 100%;
-		    font-size: 15px;
-		    color: #fff;
-		    text-transform: uppercase;
-		    margin-top: 13px;
-		    margin-bottom: 45px;
-		    letter-spacing: 1px;
-		    @include tablets {
-		    	font-size: 13.5px;
-		    }
-		    @include phones {
-		    	font-size: 12px;
-		    }
+			width: 100%;
+			font-size: 15px;
+			color: #fff;
+			text-transform: uppercase;
+			margin-top: 13px;
+			margin-bottom: 45px;
+			letter-spacing: 1px;
+			@include tablets {
+				font-size: 13.5px;
+			}
+			@include phones {
+				font-size: 12px;
+			}
 		}
 		&__hello {
 			margin-top: 9px;

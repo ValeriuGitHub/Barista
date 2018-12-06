@@ -6,41 +6,41 @@
 		padding-bottom: 60px;
 	}
 	&__title {
-	    letter-spacing: 4.5px;
-	    margin-bottom: 25px;
-	    @include phones {
-	    	margin-bottom: 15px;
-	    }
+		letter-spacing: 4.5px;
+		margin-bottom: 25px;
+		@include phones {
+			margin-bottom: 15px;
+		}
 	}
 	&__under-title {
-  		color: $dark-blue;
-  		letter-spacing: -0.15px;
-  		font-weight: 300;
-  		margin-bottom: 74px;
-  		@include tablets {
-  			margin-bottom: 54px;
-  		}
-  		@include phones {
-  			margin-bottom: 20px;
-  		}
+		color: $dark-blue;
+		letter-spacing: -0.15px;
+		font-weight: 300;
+		margin-bottom: 74px;
+		@include tablets {
+			margin-bottom: 54px;
+		}
+		@include phones {
+			margin-bottom: 20px;
+		}
 	}
 	&__slider {
 		position: relative;
 		@include laptops {
-		    width: 810px;
-		    display: block;
-		    margin: 0 auto;
-	    }
-	    @include tablets {
-	    	width: auto;
-	    }
+			width: 810px;
+			display: block;
+			margin: 0 auto;
+		}
+		@include tablets {
+			width: auto;
+		}
 	}
 	&__main {
 		&-slider {
 			display: block;
 			margin: 0 auto;
-		    flex-direction: column;
-		    align-items: center;
+			flex-direction: column;
+			align-items: center;
 		}
 	}
 	&__avatar {
@@ -52,25 +52,25 @@
 			font-size: 17.5px;
 			font-family: "Roboto";
 			text-transform: uppercase;
-		    letter-spacing: 1.5px;
-    		margin-bottom: 14px;
+			letter-spacing: 1.5px;
+			margin-bottom: 14px;
 		}
 		&-text {
-		    width: 872px;
-		    text-align: center;
-		    color: #485260;
-		    font-weight: 300;
-		    font-family: Georgia;
-		    letter-spacing: -0.1px;
-		    line-height: 2.2;
-		    margin: 0 auto;
-		    margin-bottom: 37px;
-		    @include laptops {
-		    	width: 800px;
-		    }
-		    @include tablets {
-		    	width: auto;
-		    }
+			width: 872px;
+			text-align: center;
+			color: $dark-blue;
+			font-weight: 300;
+			font-family: Georgia;
+			letter-spacing: -0.1px;
+			line-height: 2.2;
+			margin: 0 auto;
+			margin-bottom: 37px;
+			@include laptops {
+				width: 800px;
+			}
+			@include tablets {
+				width: auto;
+			}
 		}
 		&-wrapper {
 			position: relative;
@@ -78,8 +78,8 @@
 			margin: 0 auto 35px;
 		}
 		&-icon {
-		    color: #fff;
-		    font-size: 21px;
+			color: #fff;
+			font-size: 21px;
 		}
 		&-circle {
 			border-radius: 50%;
@@ -87,24 +87,25 @@
 			width: 38.5px;
 			height: 38.5px;
 			position: absolute;
-		    top: 22px;
-		    right: -7px;
-    	    display: flex;
-    		justify-content: center;
-   			align-items: center;
-   			&:hover {
-   				background-color: rgba(#4267b2, 0.9);
-   			}
+			top: 22px;
+			right: -7px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			&:hover {
+				background-color: rgba(#4267b2, 0.9);
+			}
 		}
 	}
 	&-circles {
 		&__list {
+			@extend %list;
 			display: flex;
 			justify-content: center;
 		}
 		&__circle {
 			border-radius: 50%;
-			background-color: $black;
+			background-color: #000;
 			width: 15.5px;
 			height: 15.5px;
 			&_active {
@@ -135,45 +136,45 @@
 			border-right: 1px solid transparent;
 		}
 		&-wrapper {
-		    width: 60px;
-		    height: 60px;
-		    position: absolute;
-		    display: flex;
-		    justify-content: center;
-		    align-items: center;
-		    top: 50%;
-		    margin-top: -26px;
-		    z-index: 5;
-		    @include phones {
-		    	top: 33%;
-		    	margin-top: 0px;
-		    }
-		    &_left {
-		    	left: -10px;
-		    	&:hover .slider__ctrl_left {
-		    		border-bottom-color: $black;
-		    		border-right-color: $black;
-		    	}
-		    	@include laptops {
-		    		left: -15px;
-		    	}
-		    	@include tablets {
-		    		left: 0;
-		    	}
-		    }
-		    &_right {
-		    	right: -10px;
-		    	&:hover .slider__ctrl_right {
-		    		border-top-color: $black;
-		    		border-left-color: $black;
-		    	}
-		    	@include laptops {
-		    		right: -20px;
-		    	}
-		    	@include tablets {
-		    		right: 0;
-		    	}
-		    }
+			width: 60px;
+			height: 60px;
+			position: absolute;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			top: 50%;
+			margin-top: -26px;
+			z-index: 5;
+			@include phones {
+				top: 33%;
+				margin-top: 0px;
+			}
+			&_left {
+				left: -10px;
+				&:hover .slider__ctrl_left {
+					border-bottom-color: #000;
+					border-right-color: #000;
+				}
+				@include laptops {
+					left: -15px;
+				}
+				@include tablets {
+					left: 0;
+				}
+			}
+			&_right {
+				right: -10px;
+				&:hover .slider__ctrl_right {
+					border-top-color: #000;
+					border-left-color: #000;
+				}
+				@include laptops {
+					right: -20px;
+				}
+				@include tablets {
+					right: 0;
+				}
+			}
 		}
 	}
 }
@@ -181,8 +182,8 @@
 .main {
 	&-slider {
 		&__list {
-		    width: 100%;
-		    display: block;
+			width: 100%;
+			display: block;
 		}
 		&__item {
 			&_active {
@@ -191,12 +192,10 @@
 		}
 		&__title {
 			text-align: center;
-		    margin-top: 175px;
+			margin-top: 175px;
 		}
 	}
 }
-
-// Dots for slider
 
 .my-dots {
   position: absolute;
@@ -250,11 +249,11 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-    width: 15.5px;
-    height: 15.5px;
+	width: 15.5px;
+	height: 15.5px;
 	content: '•';
 	border-radius: 50%;
-	background-color: $black;
+	background-color: #000;
 	text-align: center;
 	opacity: 1;
 	color: black;

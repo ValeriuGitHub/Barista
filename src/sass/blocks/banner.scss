@@ -7,25 +7,25 @@
 		&__img {
 			margin: 0 auto;
 			display: block;
-		    width: 90px;
-		    margin-bottom: 32px;
-		    @include tablets {
-		    	margin-bottom: 22px;
-		    }
+			width: 90px;
+			margin-bottom: 32px;
+			@include tablets {
+				margin-bottom: 22px;
+			}
 		}
 	}
 	&__main {
 		&-title {
 		font-size: 55px;
-    	color: #fff;
-    	letter-spacing: 6.35px;
-    	margin-bottom: 36px;
-    	@include tablets {
-    		font-size: 40px;
-    	}
-    	@include phones {
-    		font-size: 30px;
-    	}
+		color: #fff;
+		letter-spacing: 6.35px;
+		margin-bottom: 36px;
+		@include tablets {
+			font-size: 40px;
+		}
+		@include phones {
+			font-size: 30px;
+		}
 			&_orange {
 				color: $orange;
 			}
@@ -43,30 +43,30 @@
 				content: "";
 				display: inline-block;
 				width: 100px;
-    			height: 13px;
+				height: 13px;
 			}
 			&:before {
 				background-image: url("./img/before-line.svg");
 				margin-right: 85px;
-			    margin-top: 4px;
-			    @include tablets {
-			    	margin-right: 10px;
-			    }
-			    @include phones {
-			    	display: none;
-			    }
+				margin-top: 4px;
+				@include tablets {
+					margin-right: 10px;
+				}
+				@include phones {
+					display: none;
+				}
 			}
 			&:after {
 				height: 16px;
 				margin-left: 85px;
-		    	transform: rotate(-180deg);
+				transform: rotate(-180deg);
 				background-image: url("./img/before-line.svg");
 				@include tablets {
-			    	margin-left: 10px;
-			    }
-			    @include phones {
-			    	display: none;
-			    }
+					margin-left: 10px;
+				}
+				@include phones {
+					display: none;
+				}
 			}
 		}
 	}
@@ -88,9 +88,6 @@
 			display: block;
 			margin: 0 auto 71px;
 			width: 140px;
-			// &-wrapper {
-			// 	margin: 0 auto;
-			// 	margin-bottom: 71px;
 			@include laptops {
 				margin-bottom: 60px;
 			}
@@ -116,56 +113,56 @@
 		&:hover .banner-circle__arrow {
 			border-color: #fff;
 			border-top-color: transparent;
-		    border-left-color: transparent;
+			border-left-color: transparent;
 		}
 		&__arrow {
-		    width: 12px;
-		    height: 12px;
-		    border: 3px solid #eab96a;
-		    border-top-color: transparent;
-		    border-left-color: transparent;
-		    transform: rotate(45deg);
-		    position: absolute;
-		    top: 24px;
-		    left: 24px;
-		    margin: auto;
-		    z-index: 1;
+			width: 12px;
+			height: 12px;
+			border: 3px solid #eab96a;
+			border-top-color: transparent;
+			border-left-color: transparent;
+			transform: rotate(45deg);
+			position: absolute;
+			top: 24px;
+			left: 24px;
+			margin: auto;
+			z-index: 1;
 		}
 	}
 }
 
 .ancher-top {
-    display: none;
-    position: fixed;
-    top: 5%;
-    left: 95%;
-    z-index: 10;
-    border-color: $black;
-    background-color: $orange;
-    @include laptops {
-    	left: 92%;
-    }
-    @include tablets {
-    	left: 90%;
-    }
-    @include phones {
-    	width: 30px;
-    	height: 30px;
-    }
-    &_active {
-    	display: block;
-    }
+	display: none;
+	position: fixed;
+	top: 5%;
+	left: 95%;
+	z-index: 10;
+	border-color: #000;
+	background-color: $orange;
+	@include laptops {
+		left: 92%;
+	}
+	@include tablets {
+		left: 90%;
+	}
+	@include phones {
+		width: 30px;
+		height: 30px;
+	}
+	&_active {
+		display: block;
+	}
 	&:hover .ancher-top__arrow {
 		opacity: 0.9;
 		border-color: #fff;
 		border-bottom-color: transparent;
-	    border-right-color: transparent;
+		border-right-color: transparent;
 	}
-    &__arrow {
-    	border: 3px solid $black;
-    	border-bottom-color: transparent;
-    	border-right-color: transparent;
-    	@include phones {
+	&__arrow {
+		border: 3px solid #000;
+		border-bottom-color: transparent;
+		border-right-color: transparent;
+		@include phones {
 			border: 3px solid #000;
 			border-bottom-color: transparent;
 			border-right-color: transparent;
@@ -173,6 +170,6 @@
 			top: 12px;
 			left: 9px;
 			height: 10px;
-    	}
-    }
+		}
+	}
 }

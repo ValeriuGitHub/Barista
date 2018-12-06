@@ -1,5 +1,5 @@
-mixin table-row(status, text, textLast)
+mixin table-row(status, statusClass, text)
 	tr.inner-table__vertical
-		td(class=`inner-table__cell inner-table__cell-status inner-table__cell-status_${textLast}`)
-			i(class=`fa fa-${status}`)
-		td(class=`inner-table__cell inner-table__cell-text inner-table__cell-text_${textLast}`) #{text}
+		td(class=`inner-table__cell inner-table__cell-status`)
+			i(class=`fa fa-${status} ${statusClass}`)
+		td(class=`inner-table__cell inner-table__cell-text`) #{text}

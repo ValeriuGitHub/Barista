@@ -1,16 +1,15 @@
 block variables
 include ../mixins/program-inner.pug
 include ../mixins/table-row.pug
-include ../mixins/footer-text.pug
 doctype html
 html(lang="en")
-    head
-        meta(charset="utf-8")
-        meta(name="viewport" content="width=device-width, initial-scale=1")
-        title #{title}
-        link(rel='stylesheet' href='libs.min.css')
-        link(rel='stylesheet' href='main.css')
-    body
-        block content
-        script(src='libs.min.js')
-        script(src='main.js')
+	head
+		meta(charset="utf-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		title #{title}
+		link(rel='stylesheet' href='libs.min.css')
+		link(rel='stylesheet' href='main.css')
+	body
+		block content
+		script(src='libs.min.js')
+		script(src='main.js')

@@ -1,97 +1,98 @@
 .header {
 	& {
-	    background: url(./img/header-bg.jpg) center no-repeat;
-	    background-size: cover;
-	    height: 100vh;
-	    width: 100%;
-    	padding: 27px 45px 0;
-    	min-height: 800px;
-    	overflow: hidden;
-    	@include laptops {
-    		padding: 20px 25px 0px;
-    	}
-    	@include tablets {
-    		padding: 20px 20px 0px;
-    	}
-    	@include phones {
-    		padding: 20px 10px 0px;
-    	}
+		background: url("./img/header-bg.jpg") center no-repeat;
+		background-size: cover;
+		height: 100vh;
+		width: 100%;
+		padding: 27px 45px 0;
+		min-height: 800px;
+		overflow: hidden;
+		@include laptops {
+			padding: 20px 25px 0px;
+		}
+		@include tablets {
+			padding: 20px 20px 0px;
+		}
+		@include phones {
+			padding: 20px 10px 0px;
+		}
 	}
 	&-top {
 		display: flex;
-	    justify-content: space-between;
-	    position: relative;
-	    @include tablets {
-	    	display: block;
-	    }
+		justify-content: space-between;
+		position: relative;
+		@include tablets {
+			display: block;
+		}
 	}
 	&-logo {
 		&-wrapper {
 			&:before, &:after {
-		    	content: "";
-		    	display: block;
-			    position: absolute;
-			    height: 1px;
-			    background-color: #837878;
-			    top: 50%;
-		    }
-		    &:before {
-			    width: 1.6%;
-			    left: -43px;
-			    @include desktops {
-			        width: 3.6%;
-			    }
-			    @include laptops {
-			    	width: 12.5px;
-			    	left: -24px;
-			    }
-			    @include tablets {
-			    	display: none;
-			    }
-		    }
-		    &:after {
-			    width: 87%;
-			    left: 15.5%;
-			    @include desktops {
-			    	left: 273px;
-			    }
-			    @include laptops {
-				    width: 100%;
-				    left: 200px;
-			    }
-			    @include tablets {
-			    	left: 0;
-			    }
-		    }
+				content: "";
+				display: block;
+				position: absolute;
+				height: 1px;
+				background-color: #837878;
+				top: 50%;
+			}
+			&:before {
+				width: 1.6%;
+				left: -43px;
+				@include desktops {
+					width: 3.6%;
+				}
+				@include laptops {
+					width: 12.5px;
+					left: -24px;
+				}
+				@include tablets {
+					display: none;
+				}
+			}
+			&:after {
+				width: 87%;
+				left: 15.5%;
+				@include desktops {
+					left: 273px;
+				}
+				@include laptops {
+					width: 100%;
+					left: 200px;
+				}
+				@include tablets {
+					left: 0;
+				}
+			}
 		}
 		&__img {
 			display: block;
-		    width: 225.5px;
-		    position: relative;
-		    margin-left: 31px;
-		    @include laptops {
-		    	width: 170px;
-		    	margin-left: 0px;
-		    }
-		    @include tablets {
-		    	margin: 0 auto;
-		    	padding-bottom: 30px;
-		    }
+			width: 225.5px;
+			position: relative;
+			margin-left: 31px;
+			@include laptops {
+				width: 170px;
+				margin-left: 0px;
+			}
+			@include tablets {
+				margin: 0 auto;
+				padding-bottom: 30px;
+			}
 		}
 	}
 	&-navigation {
-	    display: flex;
-	    justify-content: flex-end;
-	    width: 61%;
-	    @include tablets {
-	    	width: 100%;
-	    	justify-content: space-around;
-	    }
+		display: flex;
+		justify-content: flex-end;
+		width: 61%;
+		@include tablets {
+			width: 100%;
+			justify-content: space-around;
+		}
 		&__list {
+			@extend %list;
 			display: flex;
 		}
 		&__item {
-		    font-size: 12px;
+			font-size: 12px;
 			margin-left: 43px;
 			transition: 0.7s;
 			position: relative;
@@ -102,31 +103,31 @@
 				margin-left: 5px;
 				font-size: 10px;
 			}
-		    &:last-child {
-		    	margin-right: 6px;
-		    	@include tablets {
-		    		margin-right: 0px;
-		    	}
-		    }
-		   	&:after {
-  				content: "";
-  				width: 5px;
-  				height: 5px;
-  				border-radius: 50%;
-  				background-color: #fff;
-  				display: block;
-			    position: absolute;
-			    top: 16.5%;
-			    left: -26%;
-			    @include tablets {
-			    	top: 50%;
-			    	margin-top: -10px;
-			    	left: -19%;
-			    }
-			    @include phones {
-			    	display: none;
-			    }
-  			}
+			&:last-child {
+				margin-right: 6px;
+				@include tablets {
+					margin-right: 0px;
+				}
+			}
+			&:after {
+				content: "";
+				width: 5px;
+				height: 5px;
+				border-radius: 50%;
+				background-color: #fff;
+				display: block;
+				position: absolute;
+				top: 16.5%;
+				left: -26%;
+				@include tablets {
+					top: 50%;
+					margin-top: -10px;
+					left: -19%;
+				}
+				@include phones {
+					display: none;
+				}
+			}
 			&:first-child {
 				margin-right: 12px;
 				@include tablets {
@@ -142,19 +143,19 @@
 			color: #fff;
 			text-transform: uppercase;
 			padding: 18px 14px 38px 14px;
-  			font-family: "Roboto";
-  			&:hover {
-  				border-bottom: 3px solid $orange;
-  				color: $orange;
-  			}
-  			@include laptops {
-  				&:hover {
-  					border: 0;
-  				}
-  			}
-  			@include phones {
-  				padding: 16px 5px 30px 6px;
-  			}
+			font-family: "Roboto";
+			&:hover {
+				border-bottom: 3px solid $orange;
+				color: $orange;
+			}
+			@include laptops {
+				&:hover {
+					border: 0;
+				}
+			}
+			@include phones {
+				padding: 16px 5px 30px 6px;
+			}
 		}
 	}
 	&-phone {
@@ -166,7 +167,7 @@
 			color: $orange;
 		}
 		@include laptops {
-		    padding-top: 9px;
+			padding-top: 9px;
 			font-size: 16px;
 		}
 		@include tablets {

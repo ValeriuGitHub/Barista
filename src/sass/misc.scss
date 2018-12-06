@@ -1,37 +1,37 @@
 %clearfix {
-    &:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
 }
 
 %list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+	list-style: none;
+	padding: 0;
+	margin: 0;
 }
 
 @mixin desktops() {
-    @media screen and (max-width: 1850px) {
-        @content;
-    }
+	@media screen and (max-width: 1850px) {
+		@content;
+	}
 }
 
 @mixin laptops() {
-    @media screen and (max-width: 1530px) {
-        @content;
-    }
+	@media screen and (max-width: 1530px) {
+		@content;
+	}
 }
 
 @mixin tablets() {
-    @media screen and (max-width: 1025px) {
-        @content;
-    }
+	@media screen and (max-width: 1025px) {
+		@content;
+	}
 }
 
 @mixin phones() {
-    @media screen and (max-width: 580px) {
-        @content;
-    }
+	@media screen and (max-width: 580px) {
+		@content;
+	}
 }
