@@ -46,7 +46,7 @@
 				height: 13px;
 			}
 			&:before {
-				background-image: url("./img/before-line.svg");
+				background-image: url("./img/before-line.png");
 				margin-right: 85px;
 				margin-top: 4px;
 				@include tablets {
@@ -60,7 +60,7 @@
 				height: 16px;
 				margin-left: 85px;
 				transform: rotate(-180deg);
-				background-image: url("./img/before-line.svg");
+				background-image: url("./img/before-line.png");
 				@include tablets {
 					margin-left: 10px;
 				}

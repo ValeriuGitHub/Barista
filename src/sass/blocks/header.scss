@@ -143,7 +143,7 @@
 			color: #fff;
 			text-transform: uppercase;
 			padding: 18px 14px 38px 14px;
-			font-family: "Roboto";
+			font-family: "Roboto-Black";
 			&:hover {
 				border-bottom: 3px solid $orange;
 				color: $orange;
@@ -161,7 +161,7 @@
 	&-phone {
 		color: #fff;
 		font-size: 25px;
-		font-family: "Roboto";
+		font-weight: bold;
 		line-height: 1.852;
 		&:hover {
 			color: $orange;

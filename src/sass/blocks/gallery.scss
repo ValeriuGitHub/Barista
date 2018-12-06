@@ -30,7 +30,7 @@
 			}
 		}
 		&:before {
-			background-image: url("./img/gallery-title.svg");
+			background-image: url("./img/gallery-title.png");
 			margin-right: 33px;
 			transform: rotate(180deg);
 			@include phones {
@@ -39,7 +39,7 @@
 		}
 		&:after {
 			margin-left: 33px;
-			background-image: url("./img/gallery-title.svg");
+			background-image: url("./img/gallery-title.png");
 			@include phones {
 				display: none;
 			}
