@@ -33,7 +33,7 @@
 			}
 		}
 		&:before {
-			background-image: url("./img/partners-title.svg");
+			background-image: url("./img/partners-title.png");
 			margin-right: 33px;
 			transform: rotate(0deg);
 			@include tablets {
@@ -45,7 +45,7 @@
 		}
 		&:after {
 			margin-left: 33px;
-			background-image: url("./img/partners-title.svg");
+			background-image: url("./img/partners-title.png");
 			transform: rotate(180deg);
 			@include tablets {
 				margin-bottom: 5px;
@@ -106,6 +106,7 @@
 		}
 	}
 	&__list {
+		@extend %list;
 		display: flex;
 		justify-content: center;
 		@include tablets {

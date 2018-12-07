@@ -56,7 +56,7 @@
 				text-transform: uppercase;
 				font-family: "Roboto-Black";
 				letter-spacing: 1px;
-				margin-bottom: 20px;
+    			margin-bottom: 19.5px;
 			}
 		}
 		&__list {
@@ -94,6 +94,7 @@
 			&_active {
 				opacity: 1;
 				border-bottom: 2px solid #000;
+			    margin-bottom: -2px;
 			}
 			&:hover {
 				opacity: 0.8;
@@ -118,7 +119,7 @@
 				}
 			}
 			&-description {
-				padding-bottom: 48px;
+				padding-bottom: 46px;
 				@include tablets {
 					padding-bottom: 20px;
 				}
@@ -127,14 +128,15 @@
 				}
 			}
 			&-table {
+				border-collapse: collapse;
+				width: 694px;
+				@include tablets {
+					width: auto;
+				}
 				&-wrapper {
 					padding-left: 8px;
 					@include tablets {
 						padding-left: 0px;
-					}
-					@include phones {
-						display: none;
-						padding-bottom: 0px;
 					}
 				}
 			}
@@ -184,35 +186,28 @@
 				margin-bottom: 30px;
 			}
 		}
-		&__certificate {
-			display: flex;
-			align-items: center;
-			margin-bottom: 20px;
+		&__inner {
 			&-img {
 				width: 30px;
+				@extend %middle;
 			}
 			&-text {
-				margin-left: 15px;
+				margin-left: 10px;
 				font-weight: 300;
 				font-family: "Georgia";
+				@extend %middle;
 			}
 		}
+		&__certificate {
+			margin-bottom: 20px;
+		}
 		&__time {
-			display: flex;
-			align-items: center;
 			margin-bottom: 10.5px;
-			&-text {
-				margin-left: 15px;
-				font-weight: 300;
-				font-family: "Georgia";
-			}
-			&-img {
-				width: 30px;
-			}
 		}
 		&__price {
 			font-size: 58px;
 			font-weight: bold;
+			@extend %middle;
 			@include tablets {
 				font-size: 45px;
 			}
@@ -220,12 +215,11 @@
 				font-size: 38px;
 			}
 			&-wrapper {
-				display: flex;
-				align-items: center;
 				margin-bottom: 16px;
 				font-family: "Georgia-Bold";
 			}
 			&_smaller {
+				@extend %middle;
 				font-size: 31.3px;
 				margin-top: 20px;
 				@include tablets {
@@ -248,6 +242,9 @@
 			font-size: 14px;
 			text-align: center;
 			color: #fff;
+			@include tablets {
+				width: auto;
+			}
 			&:hover {
 				opacity: 0.8;
 			}
@@ -384,41 +381,29 @@
 			}
 		}
 		&-table {
-			&__vertical {
-				display: flex;
-			}
 			&__cell {
 				border: 1px solid #000;
-				padding: 8px 15px;
+				padding: 4px 13px 9px 17px;
 				&-text {
 					font-size: 16px;
 					font-family: "Georgia";
 					color: $dark-blue;
-					line-height: 2.5;
 					border-left: 0px;
 					border-bottom: 0px;
 					padding-top: 0px;
 					padding-bottom: 0px;
-					height: 39px;
 					letter-spacing: -0.15px;
-					width: 643px;
 					font-weight: 300;
-					@include tablets {
-						width: 490px;
-						height: auto;
-					}
 					&_last {
 						border-bottom: 1px solid #000;
 					}
 				}
 				&-status {
 					font-size: 18px;
-					height: 39px;
 					border: 1px solid #000;
 					border-bottom: 0px;
-					@include tablets {
-						height: 80px;
-					}
+				    padding-top: 8px;
+    				padding-bottom: 5px;
 					&_last{
 						border-bottom: 1px solid #000;
 					}

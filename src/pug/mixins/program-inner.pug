@@ -5,13 +5,13 @@ mixin program-inner(url, backTitle, title, time, price, priceValuta)
 		.tab-inner__course
 			h2.course__back-title #{backTitle}
 			h2.course__title #{title}
-			.course__certificate
-				img(src="./img/certificate.svg").course__certificate-img
-				.course__certificate-text
+			.course__certificate.course__inner
+				img(src="./img/certificate.png").course__inner-img
+				.course__inner-text
 					| Certificate
-			.course__time
-				img(src="./img/timer.svg").course__time-img
-				.course__time-text #{time}
+			.course__time.course__inner
+				img(src="./img/timer.png").course__inner-img
+				.course__inner-text #{time}
 			.course__price-wrapper
 				.course__price #{price}
 				span.course__price_smaller #{priceValuta}

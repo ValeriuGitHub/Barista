@@ -20,6 +20,7 @@
 	&-top {
 		display: flex;
 		justify-content: space-between;
+	    align-items: flex-start;
 		position: relative;
 		@include tablets {
 			display: block;
@@ -82,7 +83,7 @@
 	&-navigation {
 		display: flex;
 		justify-content: flex-end;
-		width: 61%;
+    	width: 60.7%;
 		@include tablets {
 			width: 100%;
 			justify-content: space-around;
@@ -117,7 +118,7 @@
 				background-color: #fff;
 				display: block;
 				position: absolute;
-				top: 16.5%;
+			    top: 32%;
 				left: -26%;
 				@include tablets {
 					top: 50%;
@@ -144,11 +145,13 @@
 			text-transform: uppercase;
 			padding: 18px 14px 38px 14px;
 			font-family: "Roboto-Black";
+			border-bottom: 3px solid transparent;
 			&:hover {
 				border-bottom: 3px solid $orange;
 				color: $orange;
 			}
 			@include laptops {
+				border-bottom: 0px;
 				&:hover {
 					border: 0;
 				}
@@ -163,6 +166,7 @@
 		font-size: 25px;
 		font-weight: bold;
 		line-height: 1.852;
+		letter-spacing: 0.6px;
 		&:hover {
 			color: $orange;
 		}
