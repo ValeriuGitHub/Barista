@@ -21,6 +21,14 @@
 			left: 2.5%;
 			width: 244px;
 			height: 200px;
+			@include tablets {
+				height: 150px;
+				left: 0;
+			}
+			@include phones {
+				height: 110px;
+				top: -1%;
+			}
 		}
 	}
 	&-bottom {
@@ -31,6 +39,17 @@
 		    right: 1%;
 		    width: 244px;
 		    height: 271px;
+		    @include tablets {
+		    	width: 100px;
+		    	height: 150px;
+		    	right: 1%;
+		    	bottom: -2.5%;
+		    }
+		    @include phones {
+				height: 120px;
+				right: 0;
+				bottom: -1%;
+			}
 		}
 	}
 	&__title {

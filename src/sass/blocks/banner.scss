@@ -14,6 +14,19 @@
 			}
 		}
 	}
+	&-icon {
+		color: $orange;
+		position: absolute;
+		top: 50%;
+		margin-top: -9.4px;
+		left: 50%;
+		margin-left: -6px;
+		font-size: 20px;
+		font-weight: 900;
+		&_dark {
+			color: #000;
+		}
+	}
 	&__main {
 		&-title {
 		font-size: 55px;
@@ -110,23 +123,8 @@
 		&:hover {
 			border-color: #b3b0b0;
 		}
-		&:hover .banner-circle__arrow {
-			border-color: #fff;
-			border-top-color: transparent;
-			border-left-color: transparent;
-		}
-		&__arrow {
-			width: 12px;
-			height: 12px;
-			border: 3px solid #eab96a;
-			border-top-color: transparent;
-			border-left-color: transparent;
-			transform: rotate(45deg);
-			position: absolute;
-			top: 24px;
-			left: 24px;
-			margin: auto;
-			z-index: 1;
+		&:hover .banner-icon {
+			color: #fff;
 		}
 	}
 }
@@ -136,7 +134,7 @@
 	position: fixed;
 	top: 5%;
 	left: 95%;
-	z-index: 10;
+	z-index: 20;
 	border-color: #000;
 	background-color: $orange;
 	@include laptops {

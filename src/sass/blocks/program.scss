@@ -445,6 +445,12 @@
 		right: 5%;
 		width: 244px;
 		height: 250px;
+		@include laptops {
+			bottom: -20%;
+		}
+		@include tablets {
+			display: none;
+		}
 	}
 	&__left-img {
 		background: url("./img/granola-left.png") no-repeat;
@@ -453,6 +459,9 @@
 		left: 0;
 		height: 211px;
 		width: 244px;
+		@include tablets {
+			height: 170px;
+		}
 	}
 	&__right-img {
 		background: url("./img/granola-right.png") no-repeat;
@@ -461,6 +470,17 @@
 		height: 236px;
 		right: -7%;
 		width: 244px;
+		@include laptops {
+			top: 33%;
+			right: -15%;
+		}
+		@include tablets {
+			right: -25%;
+		}
+		@include phones {
+			height: 150px;
+			right: -67%;
+		}
 	}
 	&__wood-Coffee-img {
 		background: url("./img/program-woodCoffee.png") no-repeat;
@@ -469,5 +489,15 @@
 		bottom: -9%;
 		right: -6%;
 		width: 889px;
+		@include laptops {
+			right: -10%;
+		}
+		@include tablets {
+		    right: -22%;
+		    bottom: -7%;
+		}
+		@include phones {
+			right: -61%;
+		}
 	}
 }
