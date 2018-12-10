@@ -47,8 +47,8 @@
 }
 
 .main-bg {
-	background: url("./img/main-bg.jpg") center no-repeat;
-	background-size: cover;
+	background: url("./img/main-bg.jpg");
+	background-repeat: repeat;
 }
 
 .main-title {

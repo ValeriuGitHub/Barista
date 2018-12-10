@@ -1,9 +1,9 @@
 .program {
-	background: url("/img/programs-bg.jpg") center no-repeat;
-	background-size: cover;
 	padding-top: 80px;
 	padding-bottom: 174px;
 	width: 100%;
+	position: relative;
+	overflow: hidden;
 	@include tablets {
 		padding-bottom: 60px;
 		padding-top: 10px;
@@ -35,6 +35,18 @@
 			}
 		}
 	}
+	&-granola {
+		&__img {
+			background:url("./img/header-granola.png") no-repeat;
+			background-size: contain;
+			width: 300px;
+			height: 243px;
+			z-index: 12;
+			position: absolute;
+			top: 77%;
+			right: 1.7%;
+		}
+	}
 	&__under {
 		&-title {
 			font-weight: 300;
@@ -56,7 +68,7 @@
 				text-transform: uppercase;
 				font-family: "Roboto-Black";
 				letter-spacing: 1px;
-    			margin-bottom: 19.5px;
+				margin-bottom: 19.5px;
 			}
 		}
 		&__list {
@@ -94,7 +106,7 @@
 			&_active {
 				opacity: 1;
 				border-bottom: 2px solid #000;
-			    margin-bottom: -2px;
+				margin-bottom: -2px;
 			}
 			&:hover {
 				opacity: 0.8;
@@ -402,8 +414,8 @@
 					font-size: 18px;
 					border: 1px solid #000;
 					border-bottom: 0px;
-				    padding-top: 8px;
-    				padding-bottom: 5px;
+					padding-top: 8px;
+					padding-bottom: 5px;
 					&_last{
 						border-bottom: 1px solid #000;
 					}
@@ -417,4 +429,45 @@
 	color: #c20000;
 	padding: 0px 2px;
 	font-size: 18px;
+}
+
+.granola {
+	&__img {
+		display: block;
+		position: absolute;
+		background-size: contain;
+		z-index: 12;
+	}
+	&__top-img {
+		background: url("./img/granola-top.png") no-repeat;
+		background-size: contain;
+		bottom: -16%;
+		right: 5%;
+		width: 244px;
+		height: 250px;
+	}
+	&__left-img {
+		background: url("./img/granola-left.png") no-repeat;
+		background-size: contain;
+		top: 7%;
+		left: 0;
+		height: 211px;
+		width: 244px;
+	}
+	&__right-img {
+		background: url("./img/granola-right.png") no-repeat;
+		background-size: contain;
+		top: 30.5%;
+		height: 236px;
+		right: -7%;
+		width: 244px;
+	}
+	&__wood-Coffee-img {
+		background: url("./img/program-woodCoffee.png") no-repeat;
+		background-size: contain;
+		height: 1000px;
+		bottom: -9%;
+		right: -6%;
+		width: 889px;
+	}
 }

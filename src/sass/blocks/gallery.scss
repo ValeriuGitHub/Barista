@@ -4,6 +4,7 @@
 	width: 100%;
 	padding-top: 80px;
 	padding-bottom: 148px;
+	position: relative;
 	@include tablets {
 		padding-top: 40px;
 		padding-bottom: 130px;
@@ -11,6 +12,26 @@
 	@include phones {
 		padding-top: 20px;
 		padding-bottom: 100px;
+	}
+	&-top {
+		&__img {
+			background: url("./img/gallery-top.png") no-repeat;
+			background-size: contain;
+			top: -5%;
+			left: 2.5%;
+			width: 244px;
+			height: 200px;
+		}
+	}
+	&-bottom {
+		&__img {
+			background: url("./img/gallery-bottom.png") no-repeat;
+			background-size: contain;
+		    bottom: -10%;
+		    right: 1%;
+		    width: 244px;
+		    height: 271px;
+		}
 	}
 	&__title {
 		color: #fff;
@@ -32,7 +53,6 @@
 		&:before {
 			background-image: url("./img/gallery-title.png");
 			margin-right: 33px;
-			transform: rotate(180deg);
 			@include phones {
 				display: none;
 			}
@@ -40,6 +60,7 @@
 		&:after {
 			margin-left: 33px;
 			background-image: url("./img/gallery-title.png");
+			transform: rotate(180deg);
 			@include phones {
 				display: none;
 			}

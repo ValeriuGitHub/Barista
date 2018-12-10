@@ -9,9 +9,11 @@
 		width: 100%;
 	}
 	&-wrapper {
-		padding-top: 128px;
 		@extend %clearfix;
+		padding-top: 128px;
 		padding-bottom: 261px;
+		position: relative;
+		overflow: hidden;
 		@include laptops {
 			padding-bottom: 200px;
 			border-top: 100px;
@@ -36,6 +38,26 @@
 		margin-bottom: 109px;
 		@include tablets {
 			margin-bottom: 50px;
+		}
+	}
+	&-coffebean {
+		&__img {
+			background: url("./img/question-coffebean.png") no-repeat;
+			background-size: contain;
+		    top: -19%;
+		    left: -9px;
+		    width: 752px;
+		    height: 800px;
+		}
+	}
+	&-translucent {
+		&__img {
+			background: url("./img/coffebean-translucent.png") no-repeat;
+			background-size: contain;
+			bottom: 20px;
+			right: -3%;
+			width: 244px;
+			height: 375px;
 		}
 	}
 	&__input {

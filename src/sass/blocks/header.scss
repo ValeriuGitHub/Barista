@@ -1,21 +1,20 @@
 .header {
-	& {
-		background: url("./img/header-bg.jpg") center no-repeat;
-		background-size: cover;
-		height: 100vh;
-		width: 100%;
-		padding: 27px 45px 0;
-		min-height: 800px;
-		overflow: hidden;
-		@include laptops {
-			padding: 20px 25px 0px;
-		}
-		@include tablets {
-			padding: 20px 20px 0px;
-		}
-		@include phones {
-			padding: 20px 10px 0px;
-		}
+	background: url("./img/header-bg.jpg") center no-repeat;
+	background-size: cover;
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	padding: 27px 45px 0;
+	min-height: 800px;
+	overflow: hidden;
+	@include laptops {
+		padding: 20px 25px 0px;
+	}
+	@include tablets {
+		padding: 20px 20px 0px;
+	}
+	@include phones {
+		padding: 20px 10px 0px;
 	}
 	&-top {
 		display: flex;
