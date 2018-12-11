@@ -461,6 +461,11 @@
 		width: 244px;
 		@include tablets {
 			height: 170px;
+			width: 170px;
+		}
+		@include phones {
+			height: 140px;
+			width: 140px;
 		}
 	}
 	&__right-img {

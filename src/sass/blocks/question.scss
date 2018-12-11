@@ -46,16 +46,16 @@
 		&__img {
 			background: url("./img/question-coffebean.png") no-repeat;
 			background-size: contain;
-		    top: -19%;
-		    left: -9px;
-		    width: 752px;
-		    height: 800px;
-		    @include laptops {
-		        left: -17%;
-		    }
-		    @include tablets {
+			top: -19%;
+			left: -9px;
+			width: 752px;
+			height: 800px;
+			@include laptops {
+				left: -17%;
+			}
+			@include tablets {
 				display: none;
-		    }
+			}
 		}
 	}
 	&-translucent {
@@ -67,16 +67,16 @@
 			width: 244px;
 			height: 375px;
 			@include laptops {
-		        right: -6%;
-		    }
-		    @include tablets {
-		    	height: 200px;
-		    	right: -30%;
-		    }
-		    @include phones {
-		    	right: -20%;
-		    	width: 150px;
-		    }
+				right: -6%;
+			}
+			@include tablets {
+				height: 200px;
+				right: -30%;
+			}
+			@include phones {
+				right: -20%;
+				width: 150px;
+			}
 		}
 	}
 	&__input {

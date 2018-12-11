@@ -22,11 +22,13 @@
 			width: 244px;
 			height: 200px;
 			@include tablets {
-				height: 150px;
+				height: 130px;
+				width: 130px;
 				left: 0;
 			}
 			@include phones {
 				height: 110px;
+				width: 110px;
 				top: -1%;
 			}
 		}
@@ -35,18 +37,18 @@
 		&__img {
 			background: url("./img/gallery-bottom.png") no-repeat;
 			background-size: contain;
-		    bottom: -10%;
-		    right: 1%;
-		    width: 244px;
-		    height: 271px;
-		    @include tablets {
-		    	width: 100px;
-		    	height: 150px;
-		    	right: 1%;
-		    	bottom: -2.5%;
-		    }
-		    @include phones {
-				height: 120px;
+			bottom: -10%;
+			right: 1%;
+			width: 244px;
+			height: 271px;
+			@include tablets {
+				width: 100px;
+				height: 150px;
+				right: 1%;
+				bottom: -2.5%;
+			}
+			@include phones {
+				height: 100px;
 				right: 0;
 				bottom: -1%;
 			}
@@ -119,68 +121,23 @@
 			}
 		}
 		&__img {
-			width: 519px;
-			@include desktops {
-				width: 459px;
-			}
-			@include laptops {
-				width: 312px;
-			}
-			@include tablets {
-				width: 100%;
-				margin: 0 auto;
-				padding: 0px 20px 10px;
-			}
-			@include phones {
-				padding: 0px 10px 10px;
-			}
-			&-second {
-				width: 754px;
-				margin-left: -80px;
-				@include desktops {
-					width: 620px;
-					margin-left: -27px;
-				}
-				@include laptops {
-					width: 419px;
-					margin-left: -33px;
-				}
-				@include tablets {
-					width: 100%;
-					margin-left: 0px;
-				}
-			}
-			&-third {
-				margin-left: 95px;
-				@include desktops {
-					margin-left: 126px;
-				}
-				@include laptops {
-					margin-left: 42px;
-				}
-				@include tablets {
-					margin-left: 0px;
-				}
-			}
-			&-first {
-				margin-left: -20px;
-				@include laptops {
-					margin-left: 0px;
-				}
-			}
+			max-height: 100%;
 		}
 	}
 	&-slider {
 		&__item {
-			margin-left: 20px;
-			@include desktops {
-				margin-left: 20px;
-			}
+   			height: 512.5px;
+			margin: 0 19.5px;
 			@include laptops {
-				margin-left: 0px;
+				height: 400px;
 			}
 			@include tablets {
-				margin-left: 0px;
+				height: 525px;
+				margin: 0 120px;
+			}
+			@include phones {
+				height: 350px;
+				margin: 0 80px;
 			}
 		}
 		&-nav {

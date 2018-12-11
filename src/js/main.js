@@ -54,8 +54,10 @@ $slickElement.on('init reInit afterChange', function (event, slick, currentSlide
 
 $('.gallery-slider__list').slick({
 	infinite: true,
-	slidesToShow: 3,
-	slidesToScroll: 3,
+	slidesToScroll: 1,
+	centerMode: true,
+	variableWidth: true,
+	adaptiveHeight: true,
 	prevArrow: $('#gallery-prev'),
 	nextArrow: $('#gallery-next'),
 	responsive: [
@@ -64,6 +66,7 @@ $('.gallery-slider__list').slick({
 			settings: {
 				slidesToShow: 1,
 				slidesToScroll: 1,
+				centerMode: true,
 				infinite: true,
 				dots: true
 			}

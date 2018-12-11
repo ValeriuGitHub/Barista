@@ -19,7 +19,7 @@
 	&-top {
 		display: flex;
 		justify-content: space-between;
-	    align-items: flex-start;
+		align-items: flex-start;
 		position: relative;
 		@include tablets {
 			display: block;
@@ -82,7 +82,7 @@
 	&-navigation {
 		display: flex;
 		justify-content: flex-end;
-    	width: 60.7%;
+		width: 60.7%;
 		@include tablets {
 			width: 100%;
 			justify-content: space-around;
@@ -117,7 +117,7 @@
 				background-color: #fff;
 				display: block;
 				position: absolute;
-			    top: 32%;
+				top: 32%;
 				left: -26%;
 				@include tablets {
 					top: 50%;

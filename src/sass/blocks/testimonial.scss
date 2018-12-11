@@ -13,8 +13,8 @@
 		}
 	}
 	&__icon {
-	    font-size: 28px;
-   	 	color: $dark-blue;
+		font-size: 28px;
+		color: $dark-blue;
 	}
 	&__under-title {
 		color: $dark-blue;
@@ -226,7 +226,7 @@
 
 .my-dots li button:hover,
 .my-dots li button:focus {
- 	outline: none;
+	outline: none;
 }
 
 .my-dots li button:hover:before,
@@ -254,7 +254,7 @@
 }
 
 .my-dots li.slick-active button:before {
- 	opacity: 1;
- 	background-color: $orange;
- 	color: black;
+	opacity: 1;
+	background-color: $orange;
+	color: black;
 }
