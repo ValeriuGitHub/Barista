@@ -24,7 +24,7 @@ $(".program-tab__item").on('click', function(e){
 	$(".program-tab__item").removeClass('program-tab__item_active');
 	$(this).addClass('program-tab__item_active');
 	$(".program-tab__inner-status").hide();
-	$(".program-tab__inner-status").filter('[data-tab='+dataTab+']').show();
+	$(".program-tab__inner-status").filter('[data-tab='+dataTab+']').fadeIn(500);
 });
 
 // Anchor-top
