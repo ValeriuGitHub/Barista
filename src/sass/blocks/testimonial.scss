@@ -39,14 +39,6 @@
 			width: auto;
 		}
 	}
-	&__main {
-		&-slider {
-			display: block;
-			margin: 0 auto;
-			flex-direction: column;
-			align-items: center;
-		}
-	}
 	&__avatar {
 		display: block;
 		width: 170px;
@@ -79,7 +71,7 @@
 		&-wrapper {
 			position: relative;
 			width: 170px;
-			margin: 0 auto 35px;
+			margin: 0 auto 31px;
 		}
 		&-icon {
 			color: #fff;
@@ -171,6 +163,10 @@
 
 .main {
 	&-slider {
+		display: block;
+		margin: 0 auto;
+		flex-direction: column;
+		align-items: center;
 		&__list {
 			@extend %list;
 			width: 100%;

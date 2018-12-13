@@ -168,28 +168,6 @@
 				display: flex;
 				justify-content: center;
 			}
-			&-item {
-				width: 33.3%;
-				display: flex;
-				justify-content: center;
-				align-content: center;
-				align-items: center;
-				flex-direction: column;
-				border-right: 1px solid #4d4d4d;
-				position: relative;
-				&:last-child {
-					border-right: 0px;
-				}
-				&:after {
-					content: "";
-					display: block;
-					height: 1px;
-					width: 100%;
-					background-color: #4d4d4d;
-					top: 45%;
-					position: absolute;
-				}
-			}
 		}
 	}
 }
@@ -203,6 +181,7 @@
 			font-family: "Roboto-Black";
 			letter-spacing: 0.44px;
 			border-bottom: 3px solid transparent;
+			display: block;
 			&:hover {
 				border-bottom: 3px solid $orange;
 				color: $orange;
@@ -219,6 +198,26 @@
 
 .column {
 	&-item {
+		width: 33.3%;
+		display: flex;
+		justify-content: center;
+		align-content: center;
+		align-items: center;
+		flex-direction: column;
+		border-right: 1px solid #4d4d4d;
+		position: relative;
+		&:last-child {
+			border-right: 0px;
+		}
+		&:after {
+			content: "";
+			display: block;
+			height: 1px;
+			width: 100%;
+			background-color: #4d4d4d;
+			top: 45%;
+			position: absolute;
+		}
 		&__icon {
 			margin-bottom: 64px;
 			width: 34px;

@@ -26,42 +26,35 @@
 		}
 	}
 	&-logo {
-		&-wrapper {
-			&:before, &:after {
-				content: "";
-				display: block;
-				position: absolute;
-				height: 1px;
-				background-color: #837878;
-				top: 50%;
+		&:before, &:after {
+			content: "";
+			display: block;
+			position: absolute;
+			height: 1px;
+			background-color: #837878;
+			top: 50%;
+		}
+		&:before {
+		    width: 29px;
+		    left: -45px;
+			@include laptops {
+				width: 12.5px;
+				left: -25px;
 			}
-			&:before {
-				width: 1.6%;
-				left: -43px;
-				@include desktops {
-					width: 3.6%;
-				}
-				@include laptops {
-					width: 12.5px;
-					left: -24px;
-				}
-				@include tablets {
-					display: none;
-				}
+			@include tablets {
+				display: none;
 			}
-			&:after {
-				width: 87%;
-				left: 15.5%;
-				@include desktops {
-					left: 273px;
-				}
-				@include laptops {
-					width: 100%;
-					left: 200px;
-				}
-				@include tablets {
-					left: 0;
-				}
+		}
+		&:after {
+			left: 286px;
+			width: calc(100% - 255.5px);
+			@include laptops {
+				left: 200px;
+				width: calc(100% - 180px);
+			}
+			@include tablets {
+				width: 100%;
+				left: 0;
 			}
 		}
 		&__img {
@@ -70,7 +63,7 @@
 			position: relative;
 			margin-left: 31px;
 			@include laptops {
-				width: 170px;
+				width: 180px;
 				margin-left: 0px;
 			}
 			@include tablets {
@@ -145,6 +138,7 @@
 			padding: 18px 14px 38px 14px;
 			font-family: "Roboto-Black";
 			border-bottom: 3px solid transparent;
+			display: block;
 			&:hover {
 				border-bottom: 3px solid $orange;
 				color: $orange;
@@ -166,6 +160,7 @@
 		font-weight: bold;
 		line-height: 1.852;
 		letter-spacing: 0.6px;
+		display: block;
 		&:hover {
 			color: $orange;
 		}

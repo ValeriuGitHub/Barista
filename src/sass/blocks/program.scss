@@ -76,7 +76,7 @@
 			display: flex;
 			justify-content: center;
 			text-align: center;
-			margin-bottom: 93px;
+			margin-bottom: 97px;
 			padding-left: 138px;
 			padding-right: 138px;
 			border-bottom: 2px solid #c6c6c6;
@@ -95,7 +95,7 @@
 			text-transform: uppercase;
 			flex-basis: 100%;
 			letter-spacing: 2.5px;
-			border-bottom: 2px solid transparent;
+			border-bottom: 3.5px solid transparent;
 			opacity: 0.5;
 			@include tablets {
 				font-size: 20px;
@@ -105,20 +105,38 @@
 			}
 			&_active {
 				opacity: 1;
-				border-bottom: 2px solid #000;
-				margin-bottom: -2px;
+				border-bottom: 3.5px solid #000;
+				margin-bottom: -3.5px;
 			}
 			&:hover {
 				opacity: 0.8;
 			}
 		}
 		&__link {
-			padding: 50px 0px 34px;
+			padding: 50px 0px 27px;
 			color: #000;
 			z-index: 10;
 			position: relative;
+			display: block;
 		}
 		&__inner {
+			&-status {
+				&_active {
+					display: block;
+				}
+			}
+			&-table {
+				&-wrapper {
+					padding-left: 8px;
+					@include tablets {
+						padding-left: 0px;
+					}
+				}
+			}
+		}
+	}
+	.tab {
+		&-inner {
 			display: flex;
 			margin-bottom: 75px;
 			@include tablets {
@@ -139,23 +157,6 @@
 					padding-bottom: 0px;
 				}
 			}
-			&-table {
-				border-collapse: collapse;
-				width: 694px;
-				@include tablets {
-					width: auto;
-				}
-				&-wrapper {
-					padding-left: 8px;
-					@include tablets {
-						padding-left: 0px;
-					}
-				}
-			}
-		}
-	}
-	.tab {
-		&-inner {
 			&__img {
 				width: 650px;
 				padding-left: 9px;
@@ -165,25 +166,23 @@
 					padding-left: 0px;
 				}
 				&-wrapper {
-					padding-right: 61px;
+					margin-right: 61px;
 					position: relative;
 					z-index: 5;
 					@include tablets {
-						padding-right: 0px;
+						margin-right: 0px;
 					}
-				}
-			}
-			&__course {
-				padding-top: 10px;
-				position: relative;
-				z-index: 1;
-				@include tablets {
-					text-align: center;
 				}
 			}
 		}
 	}
 	.course {
+		padding-top: 10px;
+		position: relative;
+		z-index: 1;
+		@include tablets {
+			text-align: center;
+		}
 		&__title {
 			font-size: 30px;
 			color: #2b2b2b;
@@ -254,6 +253,7 @@
 			font-size: 14px;
 			text-align: center;
 			color: #fff;
+			display: block;
 			@include tablets {
 				width: auto;
 			}
@@ -284,6 +284,13 @@
 	}
 	.inner {
 		&-description {
+			padding-bottom: 46px;
+			@include tablets {
+				padding-bottom: 20px;
+			}
+			@include phones {
+				padding-bottom: 0px;
+			}
 			&__list {
 				@extend %list;
 				display: flex;
@@ -393,6 +400,11 @@
 			}
 		}
 		&-table {
+			border-collapse: collapse;
+			width: 694px;
+			@include tablets {
+				width: auto;
+			}
 			&__cell {
 				border: 1px solid #000;
 				padding: 4px 13px 9px 17px;
@@ -431,27 +443,7 @@
 	font-size: 18px;
 }
 
-.granola {
-	&__img {
-		display: block;
-		position: absolute;
-		background-size: contain;
-		z-index: 12;
-	}
-	&__top-img {
-		background: url("./img/granola-top.png") no-repeat;
-		background-size: contain;
-		bottom: -6%;
-		right: 5%;
-		width: 244px;
-		height: 250px;
-		@include laptops {
-			bottom: -20%;
-		}
-		@include tablets {
-			display: none;
-		}
-	}
+.program-granola {
 	&__left-img {
 		background: url("./img/granola-left.png") no-repeat;
 		background-size: contain;
@@ -504,5 +496,23 @@
 		@include phones {
 			right: -61%;
 		}
+	}
+}
+
+.main-bg__granola-img {
+	display: block;
+	position: absolute;
+	z-index: 12;
+	background: url("./img/granola-top.png") no-repeat;
+	background-size: contain;
+	bottom: -6%;
+	right: 5%;
+	width: 244px;
+	height: 250px;
+	@include laptops {
+		bottom: -20%;
+	}
+	@include tablets {
+		display: none;
 	}
 }

@@ -1,11 +1,11 @@
 mixin program-inner(url, backTitle, title, time, price, priceValuta)
-	.program-tab__inner
+	.tab-inner
 		.tab-inner__img-wrapper
 			img(src=url).tab-inner__img
-		.tab-inner__course
+		.course
 			h2.course__back-title #{backTitle}
 			h2.course__title #{title}
-			.course__certificate.course__inner
+			.course__certificate
 				img(src="./img/certificate.png").course__inner-img
 				.course__inner-text
 					| Certificate
@@ -17,7 +17,7 @@ mixin program-inner(url, backTitle, title, time, price, priceValuta)
 				span.course__price_smaller #{priceValuta}
 			a(href="" target="_blank").course__button
 				| registration
-	.program-tab__inner-description
+	.inner-description
 		ul.inner-description__list
 			li.inner-description__item
 				h3.small-title.inner-description__title

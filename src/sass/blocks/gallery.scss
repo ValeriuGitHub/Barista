@@ -13,44 +13,46 @@
 		padding-top: 20px;
 		padding-bottom: 100px;
 	}
-	&-top {
-		&__img {
-			background: url("./img/gallery-top.png") no-repeat;
-			background-size: contain;
-			top: -5%;
-			left: 2.5%;
-			width: 244px;
-			height: 200px;
-			@include tablets {
-				height: 130px;
-				width: 130px;
-				left: 0;
-			}
-			@include phones {
-				height: 110px;
-				width: 110px;
-				top: -1%;
+	&-granola {
+		&-top {
+			&__img {
+				background: url("./img/gallery-top.png") no-repeat;
+				background-size: contain;
+				top: -5%;
+				left: 2.5%;
+				width: 244px;
+				height: 200px;
+				@include tablets {
+					height: 130px;
+					width: 130px;
+					left: 0;
+				}
+				@include phones {
+					height: 110px;
+					width: 110px;
+					top: -1%;
+				}
 			}
 		}
-	}
-	&-bottom {
-		&__img {
-			background: url("./img/gallery-bottom.png") no-repeat;
-			background-size: contain;
-			bottom: -10%;
-			right: 1%;
-			width: 244px;
-			height: 271px;
-			@include tablets {
-				width: 100px;
-				height: 150px;
+		&-bottom {
+			&__img {
+				background: url("./img/gallery-bottom.png") no-repeat;
+				background-size: contain;
+				bottom: -10%;
 				right: 1%;
-				bottom: -2.5%;
-			}
-			@include phones {
-				height: 100px;
-				right: 0;
-				bottom: -1%;
+				width: 244px;
+				height: 271px;
+				@include tablets {
+					width: 100px;
+					height: 150px;
+					right: 1%;
+					bottom: -2.5%;
+				}
+				@include phones {
+					height: 100px;
+					right: 0;
+					bottom: -1%;
+				}
 			}
 		}
 	}
@@ -109,7 +111,7 @@
 		}
 	}
 	&-slider {
-		&-wrapper {
+		&__main {
 			margin-bottom: 60px;
 		}
 		&__list {

@@ -86,6 +86,13 @@
 	}
 }
 
+.granola__img {
+	display: block;
+	position: absolute;
+	background-size: contain;
+	z-index: 12;
+}
+
 .container {
 	width: 1200px;
 	margin: 0 auto;
